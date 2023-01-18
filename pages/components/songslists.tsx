@@ -1,6 +1,6 @@
 
 
-export default function Songslist() {
+export default function Songslists() {
   const Songs = [
     {
         name: "Playlist 1",
@@ -16,7 +16,7 @@ export default function Songslist() {
     return (
       <>
         <div className="w-11/12">
-          <div className="text-white flex justify-center ">White Text</div>
+          <div className="text-black   flex justify-center ">wtf bitchez</div>
           <div className="grid grid-cols-4">
             {Songs.map((i) => (
               <div key={i.id}>

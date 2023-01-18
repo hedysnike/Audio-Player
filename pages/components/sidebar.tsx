@@ -14,7 +14,6 @@ export default function Sidebar() {
           </div>
           <div className="my-3">Home</div>
             <div className="my-3">Songs</div>
-          <div className="my-3">Rooms</div>
         </div>
       </div>
     </>

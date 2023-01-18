@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Inter } from "@next/font/google";
+import Link from "next/link";
 
 export default function Playlists() {
   const Playlists = [
@@ -8,7 +9,7 @@ export default function Playlists() {
       id: "1",
       Image: "2pac.jpg",
     },
-    {
+    { 
       name: "Diamond on The  Streets",
       id: "2",
       Image: "playboicarti.jpg",
@@ -19,7 +20,7 @@ export default function Playlists() {
       Image: "techno.jpg",
     },
     {
-      name: "",
+      name: "black",
       id: "4",
       Image: "heart.jpg",
     },
@@ -36,10 +37,12 @@ export default function Playlists() {
         <div className="mx-32 w-auto grid grid-cols-4 gap-10 text-white">
           {Playlists.map((i) => (
             <div key={i.id} className="p-5 pb-4 bg-[#181818] hover:bg-[#232323]">
-              <div className="justify-center">
-                <img src={i.Image} className="rounded-xl w-52 h-52" />
-              </div>
-              <div className="text-center mt-2">{i.name}</div>
+              <Link href="/playlist/[pid]" as={`/playlist/${i.name}`}>
+                <div className="justify-center">
+                  <img src={i.Image} className="rounded-xl w-52 h-52" />
+                </div>
+                <div className="text-center mt-2">{i.name}</div>
+              </Link>
             </div>
           ))}
         </div>

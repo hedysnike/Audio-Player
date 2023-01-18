@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Inter } from "@next/font/google";
 import Sidebar from "./components/sidebar";
 import Playlists from "./components/playlists";
-import Songslist from "./components/songslist";
+import Songslist from "./components/songslists";
 
 export default function Home() {
   return (
