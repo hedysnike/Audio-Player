@@ -21,7 +21,7 @@ export const Playlists = [
     ],
   },
   {
-    name: "Diamond on The  Streets",
+    name: "Diamond Off Streets",
     id: "457897",
     Image: "playboicarti.jpg",
     songlist: [
@@ -42,7 +42,7 @@ export const Playlists = [
       ],    
   },
   {
-    name: "Seconds",
+    name: "ἀναγνώρισις",
     id: "947345",
     Image: "techno.jpg",
     songlist: [
@@ -63,7 +63,7 @@ export const Playlists = [
       ],    
   },
   {
-    name: "black",
+    name: "",
     id: "795415",
     Image: "heart.jpg",
     songlist: [
@@ -85,7 +85,7 @@ export const Playlists = [
 
   },
   {
-    name: "The Coming of Age",
+    name: "Coming of Age",
     id: "778941",
     Image: "blacktbilisi.jfif",
     songlist: [
