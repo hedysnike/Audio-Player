@@ -15,12 +15,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-[#131314] min-h-screen h-auto">
+      <main className="bg-gradient-to-br from-[#000000] to-[#1A1A1A] min-h-screen h-auto">
         <div className="flex">
           <Sidebar />
           <div className="h-full w-1/6"></div>
           <div className="w-5/6 mt-10">
-            <div className="text-white flex justify-center ">Whole Lotta</div>
+            <div className="flex mb-8 justify-center w-full">
+            <input
+              className="bg-[#1A1A1A] p-2 md:w-96 rounded-xl pl-4 outline-none text-white"
+              type="text"
+              placeholder="Search music"
+            />
+            </div>
             <div>
               <Playlists />
             </div>

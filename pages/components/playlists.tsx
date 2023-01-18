@@ -4,7 +4,7 @@ import { Inter } from "@next/font/google";
 export default function Playlists() {
   const Playlists = [
     {
-      name: "Sorry )) it's too late",
+      name: "Sorry )) It'$ too Late",
       id: "1",
       Image: "2pac.jpg",
     },
@@ -14,20 +14,20 @@ export default function Playlists() {
       Image: "playboicarti.jpg",
     },
     {
-      name: "Consciousness Trap",
+      name: "Seconds",
       id: "3",
       Image: "techno.jpg",
     },
     {
-        name: "",
-        id: "4",
-        Image: "heart.jpg",
+      name: "",
+      id: "4",
+      Image: "heart.jpg",
     },
     {
-        name: "The Coming of Age",
-        id: "5",
-        Image: "blacktbilisi.jfif",
-    }
+      name: "The Coming of Age",
+      id: "5",
+      Image: "blacktbilisi.jfif",
+    },
   ];
 
   return (
@@ -35,13 +35,11 @@ export default function Playlists() {
       <div>
         <div className="mx-32 w-auto grid grid-cols-4 gap-10 text-white">
           {Playlists.map((i) => (
-            <div key={i.id}>
+            <div key={i.id} className="p-5 pb-4 bg-[#181818] hover:bg-[#232323]">
               <div className="justify-center">
-                <img src={i.Image} className="w-fit rounded-xl" />
+                <img src={i.Image} className="rounded-xl w-52 h-52" />
               </div>
-              <div className="text-center mt-2">
-              {i.name}
-            </div>
+              <div className="text-center mt-2">{i.name}</div>
             </div>
           ))}
         </div>
