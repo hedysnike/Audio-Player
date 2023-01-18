@@ -22,31 +22,17 @@ export default function Playlist() {
             <div className="text-white text-4xl p-2 text-center">{selectPlaylist.name}</div>
             <div className="text-white pt-10 px-20">Start Playing</div>
             <div className="p-20 pt-10 justify-center w-full text-white">
-              <div className="flex items-center border border-solid border-transparent px-5 w-full justify-start h-[56px] hover:bg-[#242424]" >
-              <div className="" >1</div>
-              <div className="px-4 " > <img src="https://i.imgur.com/3SgsMxh.jpg" className="w-10 h-10 py-1" alt="pac"/> </div>
-              <div className="" >Changes</div>
-              <div className="ml-auto" >3.15</div>
-              </div>
-              <div className="flex items-center border border-solid border-transparent px-5 w-full justify-start h-[56px] hover:bg-[#242424]" >
-              <div className="" >1</div>
-              <div className="px-4 " > <img src="https://i.imgur.com/3SgsMxh.jpg" className="w-10 h-10 py-1" alt="pac"/> </div>
-              <div className="" >Changes</div>
-              <div className="ml-auto" >3.15</div>
-              </div>
-              <div className="flex items-center border border-solid border-transparent px-5 w-full justify-start h-[56px] hover:bg-[#242424]" >
-              <div className="" >1</div>
-              <div className="px-4 " > <img src="https://i.imgur.com/3SgsMxh.jpg" className="w-10 h-10 py-1" alt="pac"/> </div>
-              <div className="" >Changes</div>
-              <div className="ml-auto" >3.15</div>
-              </div>
-              <div className="flex items-center border border-solid border-transparent px-5 w-full justify-start h-[56px] hover:bg-[#242424]" >
-              <div className="" >1</div>
-              <div className="px-4 " > <img src="https://i.imgur.com/3SgsMxh.jpg" className="w-10 h-10 py-1" alt="pac"/> </div>
-              <div className="" >Changes</div>
-              <div className="ml-auto" >3.15</div>
-              </div>
+              {selectPlaylist.songlist.map((s) => (
 
+              <div key={s.number} className="flex items-center border border-solid border-transparent px-5 w-full justify-start h-[56px] hover:bg-[#242424]" >
+              <div className="" >{s.number}</div>
+              <div className="px-4 " > <img src="https://i.imgur.com/3SgsMxh.jpg" className="w-10 h-10 py-1" alt="pac"/> </div>
+              <div className="" >{s.name}</div>
+              <div className="ml-auto" >3.15</div>
+              </div>
+                              )
+                            )
+                          }
                </div>
           </div>
         </div>
