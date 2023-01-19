@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Sidebar from "./components/sidebar";
 import Playlists from "./components/playlists";
+import { Layout } from "./components/Layout";
 
 export default function Home() {
   return (
@@ -13,15 +14,14 @@ export default function Home() {
       </Head>
       <main className="bg-gradient-to-br from-[#000000] to-[#1A1A1A] min-h-screen h-auto">
         <div className="flex">
-            <Sidebar />
           <div className="h-full w-1/6"></div>
           <div className="w-5/6 mt-10">
             <div className="flex mb-8 justify-center w-full">
-            <input
-              className="bg-[#1A1A1A] p-2 md:w-96 rounded-xl pl-4 outline-none text-white"
-              type="text"
-              placeholder="Search music"
-            />
+              <input
+                className="bg-[#1A1A1A] p-2 md:w-96 rounded-xl pl-4 outline-none text-white"
+                type="text"
+                placeholder="Search music"
+              />
             </div>
             <div>
               <Playlists />
@@ -32,3 +32,5 @@ export default function Home() {
     </>
   );
 }
+
+Home.Layout = Layout;

@@ -5,14 +5,14 @@ export const Playlists = [
     Image: "2pac.jpg",
     songlist: [
       {
-        name: "Dear Mama",
-        artist: "2pac",
+        name: "Havoc-Thug Chroniles",
+        artist: "Mobb Deep & Kool-G",
         Image: "2pac.jpg",
         number: "1",
         Playtime: "3:45",
       },
       {
-        name: "Changes",
+        name: "Black Cotton _ Realest Killaz",
         artist: "2pac",
         Image: "2pac.jpg",
         number: "2",
