@@ -1,5 +1,4 @@
 import Router, { useRouter } from "next/router";
-import Sidebar from "../components/sidebar";
 import { Playlists } from "../../playlists";
 import { Layout } from "../components/Layout";
 
