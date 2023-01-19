@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Sidebar from "./components/sidebar";
 import Playlists from "./components/playlists";
 import { Layout } from "./components/Layout";
 
