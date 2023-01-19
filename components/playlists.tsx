@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Playlists } from "../../playlists";
+import { Playlists } from "../playlists";
 
 export default function PlaylistDisplay() {
   return (

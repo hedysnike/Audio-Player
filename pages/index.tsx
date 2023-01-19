@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Playlists from "./components/playlists";
-import { Layout } from "./components/Layout";
+import Playlists from "../components/playlists";
+import { Layout } from "../components/Layout";
 
 export default function Home() {
   return (

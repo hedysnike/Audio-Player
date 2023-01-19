@@ -1,6 +1,6 @@
 import Router, { useRouter } from "next/router";
 import { Playlists } from "../../playlists";
-import { Layout } from "../components/Layout";
+import { Layout } from "../../components/Layout";
 
 export default function Playlist() {
   const router = useRouter();
