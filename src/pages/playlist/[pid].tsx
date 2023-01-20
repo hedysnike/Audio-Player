@@ -1,5 +1,5 @@
 import Router, { useRouter } from "next/router";
-import { Playlists } from "../../lists";
+import { playlists } from "../../lists";
 import { Layout } from "../../components/Layout";
 import { useState } from "react";
 import { SongListDisplay } from "../../components/songlistdisplay";
@@ -10,7 +10,7 @@ export default function Playlist() {
   const router = useRouter();
   const { pid } = router.query;
 
-  const selectPlaylist = Playlists.find((p) => p.id === pid);
+  const selectPlaylist = playlists.find((p) => p.id === Number(pid));
 
   if (!selectPlaylist) {
     return <div>Playlist not found</div>;
@@ -26,15 +26,7 @@ export default function Playlist() {
             <div className="text-white pt-10 px-20">Start Playing</div>
             <div className="p-20 pt-10 justify-center w-full text-white">
               {selectPlaylist.songlist.map((s) => (
-                <SongListDisplay
-                  {...s}
-                  name={s.name}
-                  artist={s.artist}
-                  key={s.id}
-                  number={s.number}
-                  URL={s.URL}
-                  Image={s.Image}
-                />
+                <SongListDisplay key={s.id} song={s} />
               ))}
             </div>
           </div>

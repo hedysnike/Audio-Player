@@ -1,7 +1,9 @@
-export const Playlists = [
+import { Playlist } from "./components/hooks/types";
+
+export const playlists: Playlist[] = [
   {
     name: "Sorry )) It'$ too Late",
-    id: "454036",
+    id: 454036,
     Image: "2pac.jpg",
     songlist: [
       {
@@ -10,7 +12,6 @@ export const Playlists = [
         artist: "2Pac",
         Image: "2pac.jpg",
         number: "1",
-        Playtime: "3:45",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/sorry/2PAC+-+Suicidal+Thoughts.mp3",
       },
       {
@@ -19,7 +20,6 @@ export const Playlists = [
         artist: "2pac",
         Image: "2pac.jpg",
         number: "2",
-        Playtime: "3:25",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/sorry/Black+Cotton+-+2pac.mp3",
       },
       {
@@ -28,7 +28,6 @@ export const Playlists = [
         artist: "2pac",
         Image: "2pac.jpg",
         number: "3",
-        Playtime: "3:45",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/sorry/Don't+Go+To+Sleep+-+2pac.mp3",
       },
       {
@@ -37,7 +36,6 @@ export const Playlists = [
         artist: "2pac",
         Image: "2pac.jpg",
         number: "4",
-        Playtime: "3:45",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/sorry/Dumpin+x+This+life+i+lead+-+2Pac.mp3",
       },
       {
@@ -46,14 +44,13 @@ export const Playlists = [
         artist: "Mobb Deep & Kool-G",
         Image: "2pac.jpg",
         number: "5",
-        Playtime: "3:45",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/sorry/Havoc-Thug+Chroniles.mp3",
       },
     ],
   },
   {
     name: "Diamond Off Streets",
-    id: "457897",
+    id: 457897,
     Image: "playboicarti.jpg",
     songlist: [
       {
@@ -62,7 +59,6 @@ export const Playlists = [
         artist: "2pac",
         Image: "2pac.jpg",
         number: "1",
-        Playtime: "3:45",
         URL: "",
       },
       {
@@ -71,14 +67,13 @@ export const Playlists = [
         artist: "2pac",
         Image: "2pac.jpg",
         number: "2",
-        Playtime: "3:45",
         URL: "",
       },
     ],
   },
   {
     name: "ἀναγνώρισις",
-    id: "947345",
+    id: 947345,
     Image: "techno.jpg",
     songlist: [
       {
@@ -87,7 +82,6 @@ export const Playlists = [
         artist: "Death Note",
         Image: "2pac.jpg",
         number: "1",
-        Playtime: "3:45",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/Death+Note+-+Light's+Theme.mp3",
       },
       {
@@ -96,14 +90,13 @@ export const Playlists = [
         artist: "Death note",
         Image: "2pac.jpg",
         number: "2",
-        Playtime: "3:45",
         URL: "",
       },
     ],
   },
   {
     name: "",
-    id: "795415",
+    id: 795415,
     Image: "heart.jpg",
     songlist: [
       {
@@ -112,7 +105,6 @@ export const Playlists = [
         artist: "2pac",
         Image: "2pac.jpg",
         number: "1",
-        Playtime: "3:45",
         URL: "",
       },
       {
@@ -121,14 +113,13 @@ export const Playlists = [
         artist: "2pac",
         Image: "2pac.jpg",
         number: "2",
-        Playtime: "3:45",
         URL: "",
       },
     ],
   },
   {
     name: "Coming of Age",
-    id: "178941",
+    id: 178941,
     Image: "blacktbilisi.jfif",
     songlist: [
       {
@@ -137,7 +128,6 @@ export const Playlists = [
         artist: "2pac",
         Image: "2pac.jpg",
         number: "1",
-        Playtime: "3:45",
         URL: "",
       },
       {
@@ -146,7 +136,6 @@ export const Playlists = [
         artist: "2pac",
         Image: "2pac.jpg",
         number: "2",
-        Playtime: "3:45",
         URL: "",
       },
     ],

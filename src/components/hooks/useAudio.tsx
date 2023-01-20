@@ -1,39 +1,58 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import { Song } from "./types";
 
-const AudioContext = createContext<any>(null);
+const AudioContext = createContext<{
+  audio: HTMLAudioElement | null;
+  PlaySong: (song: Song) => void;
+  isPlaying: boolean;
+  PauseSong: () => void;
+  currentSong: Song | undefined;
+}>({
+  audio: null,
+  PlaySong: () => {},
+  isPlaying: false,
+  PauseSong: () => {},
+  currentSong: undefined,
+});
 
 export const useAudio = () => useContext(AudioContext);
 
 export const useAudioProvider = () => {
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
-  const [currentlySongPlaying, setCurrentlySongPlaying] = useState(false);
+  const [currentSong, setCurrentSong] = useState<Song>();
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     if (audio) {
       audio.play();
-      setCurrentlySongPlaying(true);
+      setIsPlaying(true);
     }
   }, [audio]);
 
-  function PlaySong(url:string){
-    if (currentlySongPlaying) {
+  function PlaySong(song: Song) {
+    if (isPlaying) {
       audio?.pause();
-      setCurrentlySongPlaying(false);
+      setIsPlaying(false);
     }
 
-    setAudio(new Audio(url));
+    setCurrentSong(song);
+    setAudio(new Audio(song.URL));
   }
 
   function PauseSong() {
     audio?.pause();
-    setCurrentlySongPlaying(false);
+    setIsPlaying(false);
   }
 
-  return { audio, PlaySong, currentlySongPlaying, PauseSong };
+  return { audio, PlaySong, isPlaying, PauseSong, currentSong };
 };
 
 export const AudioProvider = ({ children }: { children: React.ReactNode }) => {
-  const { audio, PlaySong, currentlySongPlaying, PauseSong } = useAudioProvider();
+  const { audio, PlaySong, isPlaying, PauseSong, currentSong } = useAudioProvider();
 
-  return <AudioContext.Provider value={{ audio, PlaySong, currentlySongPlaying, PauseSong }}>{children}</AudioContext.Provider>;
+  return (
+    <AudioContext.Provider value={{ audio, PlaySong, isPlaying, PauseSong, currentSong }}>
+      {children}
+    </AudioContext.Provider>
+  );
 };

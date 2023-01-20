@@ -6,8 +6,7 @@ import { useAudio } from "../hooks/useAudio";
 
 export function Player() {
   const [currentlyPlaying, setCurrentlyPlaying] = useState(null);
-  const {audio, PlaySong} = useAudio();
-  
+  const { audio, PlaySong } = useAudio();
 
   return (
     <div className="absolute bottom-0 w-full h-[91px] bg-[#181818] border-t border-solid opacity-[99%] border-white border-opacity-20">
@@ -25,8 +24,8 @@ export function Player() {
             <div className="opacity-60 hover:opacity-100">
               <Icon icon="ic:sharp-skip-previous" color="white" width="30" height="27" />
             </div>
-            <Icon icon="material-symbols:play-circle" color="white" width="37" height="37" onClick={() => PlaySong()} />
-            <Icon icon="material-symbols:pause-circle" color="white" width="37" height="37" className={``}/>
+            <Icon icon="material-symbols:play-circle" color="white" width="37" height="37" />
+            <Icon icon="material-symbols:pause-circle" color="white" width="37" height="37" className={``} />
             <div className="opacity-60 hover:opacity-100">
               <Icon icon="ic:sharp-skip-next" color="white" width="30" height="27" />
             </div>
