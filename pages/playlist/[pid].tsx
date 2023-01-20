@@ -1,8 +1,14 @@
 import Router, { useRouter } from "next/router";
 import { Playlists } from "../../playlists";
 import { Layout } from "../../components/Layout";
+import { Icon } from "@iconify/react";
+import { useState } from "react";
+import { SongListDisplay } from "../../components/songlistdisplay";
 
 export default function Playlist() {
+  const [currentlyPlaying, setCurrentlyPlaying] = useState(null);
+  const [hovered, setHovered] = useState(false);
+  const [audioRef, setAudioRef] = useState(null);
   const router = useRouter();
   const { pid } = router.query;
 
@@ -11,6 +17,17 @@ export default function Playlist() {
   if (!selectPlaylist) {
     return <div>Playlist not found</div>;
   }
+
+  const playAudio = (song: any) => {
+    if (audioRef) {
+      audioRef.pause();
+      audioRef.currentTime = 0;
+    }
+    setCurrentlyPlaying(song);
+    const newAudioRef = new Audio(song.URL);
+    setAudioRef(newAudioRef);
+    newAudioRef.play();
+  };
 
   return (
     <>
@@ -22,18 +39,16 @@ export default function Playlist() {
             <div className="text-white pt-10 px-20">Start Playing</div>
             <div className="p-20 pt-10 justify-center w-full text-white">
               {selectPlaylist.songlist.map((s) => (
-                <div
-                  key={s.number}
-                  className="flex items-center border border-solid border-transparent px-5 w-full justify-start h-[56px] hover:bg-[#242424]"
-                >
-                  <div className="">{s.number}</div>
-                  <div className="px-4 ">
-                    {" "}
-                    <img src="https://i.imgur.com/3SgsMxh.jpg" className="w-10 h-10 py-1" alt="pac" />{" "}
-                  </div>
-                  <div className="">{s.name}</div>
-                  <div className="ml-auto">3.15</div>
-                </div>
+                <SongListDisplay
+                {...s}
+                name={s.name}
+                artist={s.artist}
+                key={s.id}
+                number={s.number}
+                URL={s.URL}
+                Image={s.Image}
+                onIconClick={() => playAudio(s)}
+                />
               ))}
             </div>
           </div>
