@@ -27,10 +27,10 @@ export function SongListDisplay(props: any) {
           />
           </div>
           <Icon
-            icon="material-symbols:pause-circle"
+            icon="ic:baseline-pause"
             color="white"
-            width="37"
-            height="37"
+            width="25"
+            height="20"
             className={`${currentlySongPlaying ? "visible" : "hidden"}`}
             onClick={() => PauseSong(props.URL)}
           />
