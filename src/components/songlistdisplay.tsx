@@ -1,7 +1,9 @@
 import { Icon } from "@iconify/react";
 import { useState } from "react";
+import { useAudio } from "./hooks/useAudio";
 
 export function SongListDisplay(props: any) {
+  const { audio, PlaySong, currentlySongPlaying, PauseSong } = useAudio();
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -14,13 +16,23 @@ export function SongListDisplay(props: any) {
       >
         <div className={`${hovered ? "invisible w-0 h-0" : "visible"} `}>{props.number}</div>
         <div>
+          <div className={`${currentlySongPlaying ? "hidden" : "visible"}`} >
           <Icon
             icon="ic:baseline-play-arrow"
             color="white"
             width="25"
             height="20"
-            onClick={() => props.onIconClick(props)}
+            onClick={() => PlaySong(props.URL)}
             className={`${hovered ? "" : "hidden"}`}
+          />
+          </div>
+          <Icon
+            icon="material-symbols:pause-circle"
+            color="white"
+            width="37"
+            height="37"
+            className={`${currentlySongPlaying ? "visible" : "hidden"}`}
+            onClick={() => PauseSong(props.URL)}
           />
         </div>
         <div className="px-4 ">

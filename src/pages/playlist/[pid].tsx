@@ -1,7 +1,6 @@
 import Router, { useRouter } from "next/router";
-import { Playlists } from "../../playlists";
+import { Playlists } from "../../lists";
 import { Layout } from "../../components/Layout";
-import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { SongListDisplay } from "../../components/songlistdisplay";
 
@@ -16,17 +15,6 @@ export default function Playlist() {
   if (!selectPlaylist) {
     return <div>Playlist not found</div>;
   }
-
-  const playAudio = (song: any) => {
-    if (audioRef) {
-      audioRef.pause();
-      audioRef.currentTime = 0;
-    }
-    setCurrentlyPlaying(song);
-    const newAudioRef = new Audio(song.URL);
-    setAudioRef(newAudioRef);
-    newAudioRef.play();
-  };
 
   return (
     <>
@@ -46,7 +34,6 @@ export default function Playlist() {
                   number={s.number}
                   URL={s.URL}
                   Image={s.Image}
-                  onIconClick={() => playAudio(s)}
                 />
               ))}
             </div>
