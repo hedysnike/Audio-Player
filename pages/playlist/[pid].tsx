@@ -7,8 +7,7 @@ import { SongListDisplay } from "../../components/songlistdisplay";
 
 export default function Playlist() {
   const [currentlyPlaying, setCurrentlyPlaying] = useState(null);
-  const [hovered, setHovered] = useState(false);
-  const [audioRef, setAudioRef] = useState(null);
+  const [audioRef, setAudioRef] = useState<HTMLAudioElement>();
   const router = useRouter();
   const { pid } = router.query;
 
@@ -40,14 +39,14 @@ export default function Playlist() {
             <div className="p-20 pt-10 justify-center w-full text-white">
               {selectPlaylist.songlist.map((s) => (
                 <SongListDisplay
-                {...s}
-                name={s.name}
-                artist={s.artist}
-                key={s.id}
-                number={s.number}
-                URL={s.URL}
-                Image={s.Image}
-                onIconClick={() => playAudio(s)}
+                  {...s}
+                  name={s.name}
+                  artist={s.artist}
+                  key={s.id}
+                  number={s.number}
+                  URL={s.URL}
+                  Image={s.Image}
+                  onIconClick={() => playAudio(s)}
                 />
               ))}
             </div>
