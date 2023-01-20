@@ -3,10 +3,14 @@ import { VolumeSlider } from "./volumeslider";
 import { Slider } from "./slider";
 import { useState } from "react";
 import { useAudio } from "../hooks/useAudio";
+import { playlists } from "../../lists";
 
 export function Player() {
-  const [currentlyPlaying, setCurrentlyPlaying] = useState(null);
-  const { audio, PlaySong } = useAudio();
+const { audio, PlaySong, isPlaying, PauseSong, currentSong } = useAudio();
+const [audioRef, setAudioRef] = useState<HTMLAudioElement>();
+
+
+
 
   return (
     <div className="absolute bottom-0 w-full h-[91px] bg-[#181818] border-t border-solid opacity-[99%] border-white border-opacity-20">
@@ -15,8 +19,8 @@ export function Player() {
           <img src="https://i.imgur.com/gZBUHR6.jpeg" alt="cat" className="w-14 h-14 ml-4" />
           <div className="text-white ml-4">
             {" "}
-            <div className="text-sm"> Don`t go to Sleep</div>
-            <div className="text-xs opacity-60 ">2Pac</div>
+            <div className="text-sm"> {currentSong?.name}</div>
+            <div className="text-xs opacity-60 ">{currentSong?.artist}</div>
           </div>
         </div>
         <div className="w-full flex flex-col items-center h-[57px]">
@@ -24,8 +28,11 @@ export function Player() {
             <div className="opacity-60 hover:opacity-100">
               <Icon icon="ic:sharp-skip-previous" color="white" width="30" height="27" />
             </div>
-            <Icon icon="material-symbols:play-circle" color="white" width="37" height="37" />
-            <Icon icon="material-symbols:pause-circle" color="white" width="37" height="37" className={``} />
+            {isPlaying ? (
+              <Icon icon="material-symbols:pause-circle" color="white" width="37" height="37" onClick={PauseSong} />
+            ) : (
+              <Icon icon="material-symbols:play-circle" color="white" width="37" height="37" />
+            )}
             <div className="opacity-60 hover:opacity-100">
               <Icon icon="ic:sharp-skip-next" color="white" width="30" height="27" />
             </div>
