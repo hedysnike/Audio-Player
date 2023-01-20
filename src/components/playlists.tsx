@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { Playlists } from "../lists";
+import { playlists } from "../lists";
 
 export default function PlaylistDisplay() {
   return (
     <>
       <div>
         <div className="mx-32 w-auto grid grid-cols-4 gap-10 text-white">
-          {Playlists.map((i) => (
+          {playlists.map((i) => (
             <div key={i.id} className="p-5 pb-4 bg-[#181818] hover:bg-[#232323]">
               <Link href="/playlist/[pid]" as={`/playlist/${i.id}`}>
                 <div className="justify-center">
