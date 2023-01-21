@@ -7,7 +7,7 @@ import { playlists } from "../../lists";
 
 export function Player() {
   const { audio, PlaySong, isPlaying, PauseSong, currentSong } = useAudio();
-  const [currentTime, setCurrentTime] = useState("00:00");
+  const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
     if (audio) {
@@ -21,7 +21,7 @@ export function Player() {
           : "";
 
         setCurrentTime(currentTimeFormatted);
-      }, 480);
+      }, 50);
       return () => clearInterval(intervalId);
     }
   }, [audio]);
