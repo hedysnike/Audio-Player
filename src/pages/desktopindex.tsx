@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Layout } from "../components/Layout";
 import Playlists from "../components/playlists";
+import React from "react";
 
 export function DesktopHome() {
   return (
