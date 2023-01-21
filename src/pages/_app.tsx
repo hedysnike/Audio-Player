@@ -1,8 +1,7 @@
 import "../styles/globals.css";
-import type { AppProps } from "next/app";
 import { AudioProvider } from "../components/hooks/useAudio";
 
-export default function App({ Component, pageProps }: any) {
+export default function App({ Component, pageProps, isMobile }: any) {
   return (
     <AudioProvider>
       {Component.Layout ? (

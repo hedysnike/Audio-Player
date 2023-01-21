@@ -16,12 +16,10 @@ export function SongListDisplay(props: SongListDisplayProps) {
   const isThisPlaying = currentSong && currentSong.id == props.song.id;
   if (isPlaying) {
     icon = "ic:baseline-pause";
-    onclick = PauseSong
+    onclick = PauseSong;
   } else if (!isPlaying) {
     icon = "ic:baseline-play-arrow";
   }
-    
-  
 
   return (
     <>
@@ -32,8 +30,8 @@ export function SongListDisplay(props: SongListDisplayProps) {
       >
         <div>
           {isThisPlaying ? (
-            <div className="w-[37px]" >
-            <Icon icon={icon} color="white" width="25" height="20" onClick={onclick} />
+            <div className="w-[37px]">
+              <Icon icon={icon} color="white" width="25" height="20" onClick={onclick} />
             </div>
           ) : (
             <div className="w-[25px] items-center flex justify-center mr-3">
@@ -49,7 +47,7 @@ export function SongListDisplay(props: SongListDisplayProps) {
             </div>
           )}
         </div>
-        <div className="pr-5" >
+        <div className="pr-5">
           <img src="https://i.imgur.com/3SgsMxh.jpg" className="w-10 h-10 py-1" alt="pac" />
         </div>
         <div>{props.song.name}</div>
