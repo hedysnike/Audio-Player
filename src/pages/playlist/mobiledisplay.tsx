@@ -12,13 +12,13 @@ export default function MobileDisplay() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-gradient-to-br from-[#000000] to-[#252525] min-h-screen h-auto">
-        <div className="grid">
-        {playlists.map((i) => (
-            <div key={i.id} className="text-white p-5 pb-4">
-                <div className="text-center mt-2">{i.name}</div>
+        <div className="grid grid-cols-2 pt-28">
+          {playlists.map((i) => (
+            <div key={i.id} className="text-white p-5 pb-4 flex-col flex items-center">
+              <img  src={`/${i.Image}`} alt="" className="w-20 h-20" />
+              <div className="text-sm my-2">{i.name}</div>
             </div>
           ))}
-
         </div>
       </main>
     </>
