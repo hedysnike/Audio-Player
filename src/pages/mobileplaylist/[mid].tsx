@@ -16,15 +16,18 @@ export default function MobilePlaylist() {
   return (
     <>
       <div className="bg-gradient-to-br from-[#000000] to-[#1A1A1A] min-h-screen h-auto">
-        <div className="flex">
-          <div className="h-full w-1/6"></div>
-          <div className="w-5/6 mt-10">
-            <div className="text-white text-4xl p-2 text-center">{selecttPlaylist.name}</div>
-            <div className="text-white pt-10 px-20">Start Playing</div>
-              {selecttPlaylist.songlist.map((s) => (
-                <SongsMobileDisplay key={s.id} song={s} />
-              ))}
+        <div className="flex flex-col  text-white">
+          <div className="justify-center mt-10 flex "><img src={`/${selecttPlaylist.Image}`} alt="" className="w-[50%] h-[50%]" /></div>
+          <div className="text-2xl my-10 text-center">{selecttPlaylist.name}</div>
+          <div></div>
+          <div className="flex-row flex border-b border-solid border-white border-opacity-80 mx-2">
+            <div>#</div>
+            <div>TITLE</div>
+            <div>Duration</div>
           </div>
+          {selecttPlaylist.songlist.map((s) => (
+            <SongsMobileDisplay key={s.id} song={s} />
+          ))}
         </div>
       </div>
     </>

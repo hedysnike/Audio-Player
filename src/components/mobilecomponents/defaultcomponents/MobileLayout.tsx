@@ -1,4 +1,5 @@
 import { PropsWithChildren } from "react";
+import { MobilePlayer } from "../mobilemusicplayer/MobilePlayer";
 import { MobileMenu } from "./MobileMenu";
 
 export function MobileLayout({ children }: PropsWithChildren) {
@@ -6,6 +7,7 @@ export function MobileLayout({ children }: PropsWithChildren) {
     <div>
       <main>{children}</main>
       <MobileMenu />
+      <MobilePlayer />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function MobileMenu() {
   return (
-    <div className="fixed bottom-0 w-full h-auto bg-[#19181A]">
+    <div className="fixed top-0 w-full h-auto bg-[#1c1c1c]">
       <div className="text-white text-xs text-center grid grid-cols-4 my-2 mx-1">
         <div>
           <Link href="/playlist/mobiledisplay" className="h-auto w-auto flex items-center flex-col">
