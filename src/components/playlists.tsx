@@ -5,7 +5,7 @@ export default function PlaylistDisplay() {
   return (
     <>
       <div>
-        <div className="mx-32 w-auto grid grid-cols-4 gap-10 text-white">
+        <div className="mx-32 w-auto flex items-center flex-col lg:items-stretch lg:grid lg:grid-cols-4 gap-10 text-white">
           {playlists.map((i) => (
             <div key={i.id} className="p-5 pb-4 bg-[#181818] hover:bg-[#232323]">
               <Link href="/playlist/[pid]" as={`/playlist/${i.id}`}>

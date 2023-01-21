@@ -16,11 +16,11 @@ export default function Home() {
           <div className="h-full w-1/6"></div>
           <div className="w-5/6 mt-10">
             <div className="flex mb-8 justify-center w-full">
-              <input
+              {/* <input
                 className="bg-[#1A1A1A] p-2 md:w-96 rounded-xl pl-4 outline-none text-white"
                 type="text"
                 placeholder="Search music"
-              />
+              /> */}
             </div>
             <div>
               <Playlists />
