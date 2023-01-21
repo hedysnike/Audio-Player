@@ -18,16 +18,6 @@ export function Player() {
     }
   }, [audio]);
 
-  const duration = new Date(null);
-  duration.setSeconds(audio?.duration * 1000);
-  const durationFormatted = duration.toLocaleTimeString("en-us", {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit"
-  });
-  
-
-
 
 
   return (
@@ -48,7 +38,7 @@ export function Player() {
             </div>
             {isPlaying ? (
               <Icon icon="material-symbols:pause-circle" color="white" width="37" height="37" onClick={PauseSong} />
-            ) : (
+            ) : ( currentSong !== undefined &&
               <Icon
                 icon="material-symbols:play-circle"
                 color="white"
