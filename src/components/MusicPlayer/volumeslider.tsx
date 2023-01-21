@@ -1,21 +1,27 @@
 import * as SliderPrimitive from "@radix-ui/react-slider";
 import cx from "classnames";
-import React from "react";
+import { useAudio } from "../hooks/useAudio";
+import { useEffect } from "react";
 
 interface Props {}
 
-export function VolumeSlider (props: Props) {
+export function VolumeSlider(props: Props) {
+  const { audio } = useAudio();
+
+  const handleChange = (value: any) => {
+    if (audio) {
+      audio.volume = value / 100;
+    }
+  };
+
   return (
     <SliderPrimitive.Root
-      defaultValue={[50]}
+      defaultValue={[90]}
       max={100}
       step={1}
       aria-label="value"
       className="relative flex h-2 w-[90px] touch-none items-center"
-      onChange={(value) => {
-        console.log(value);
-      }
-      }
+      onValueChange={(value) => handleChange(value) }
     >
       <SliderPrimitive.Track className="relative h-1 w-full grow rounded-full bg-white dark:bg-gray-800 bg-opacity-25 ">
         <SliderPrimitive.Range className="absolute h-full rounded-full bg-white dark:bg-white" />
@@ -30,4 +36,4 @@ export function VolumeSlider (props: Props) {
       />
     </SliderPrimitive.Root>
   );
-};
+}

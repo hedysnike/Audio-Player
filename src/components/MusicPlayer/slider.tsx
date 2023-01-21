@@ -1,13 +1,16 @@
 import * as SliderPrimitive from "@radix-ui/react-slider";
 import cx from "classnames";
 import React from "react";
-
+import { useAudio } from "../hooks/useAudio";
 interface Props {}
 
 export function Slider (props: Props) {
+  const { audio } = useAudio();
+
+
   return (
     <SliderPrimitive.Root
-      defaultValue={[50]}
+      
       max={100}
       step={1}
       aria-label="value"

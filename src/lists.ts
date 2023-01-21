@@ -114,6 +114,14 @@ export const playlists: Playlist[] = [
         number: "1",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/JAY+Z%2C+Kanye+West+-+Otis+Redding.mp3",
       },
+      {
+        id: 17892,
+        name: "Trop Beau",
+        artist: "Emma Peters",
+        Image: "2pac.jpg",
+        number: "2",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/Lomepal+-+Trop+Beau.mp3",
+      }
     ],
   },
 ];

@@ -30,13 +30,22 @@ export const useAudioProvider = () => {
   }, [audio]);
 
   function PlaySong(song: Song) {
-    if (isPlaying) {
-      audio?.pause();
-      setIsPlaying(false);
+    if (currentSong && currentSong.URL === song.URL) {
+      if (isPlaying) {
+        audio?.pause();
+        setIsPlaying(false);
+      } else {
+        audio?.play();
+        setIsPlaying(true);
+      }
+    } else {
+      if (audio) {
+        audio.pause();
+      }
+      setCurrentSong(song);
+      setAudio(new Audio(song.URL));
+      setIsPlaying(true);
     }
-
-    setCurrentSong(song);
-    setAudio(new Audio(song.URL));
   }
 
   function PauseSong() {

@@ -1,13 +1,31 @@
 import { Icon } from "@iconify/react";
 import { VolumeSlider } from "./volumeslider";
 import { Slider } from "./slider";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAudio } from "../hooks/useAudio";
 import { playlists } from "../../lists";
 
 export function Player() {
-const { audio, PlaySong, isPlaying, PauseSong, currentSong } = useAudio();
-const [audioRef, setAudioRef] = useState<HTMLAudioElement>();
+  const { audio, PlaySong, isPlaying, PauseSong, currentSong } = useAudio();
+  const [currentTime, setCurrentTime] = useState(0.00);
+
+  useEffect(() => {
+    if (audio) {
+      const intervalId = setInterval(() => {
+        setCurrentTime(audio.currentTime);
+      }, 480);
+      return () => clearInterval(intervalId);
+    }
+  }, [audio]);
+
+  const duration = new Date(null);
+  duration.setSeconds(audio?.duration * 1000);
+  const durationFormatted = duration.toLocaleTimeString("en-us", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit"
+  });
+  
 
 
 
@@ -31,14 +49,20 @@ const [audioRef, setAudioRef] = useState<HTMLAudioElement>();
             {isPlaying ? (
               <Icon icon="material-symbols:pause-circle" color="white" width="37" height="37" onClick={PauseSong} />
             ) : (
-              <Icon icon="material-symbols:play-circle" color="white" width="37" height="37" />
+              <Icon
+                icon="material-symbols:play-circle"
+                color="white"
+                width="37"
+                height="37"
+                onClick={() => PlaySong(currentSong)}
+              />
             )}
             <div className="opacity-60 hover:opacity-100">
               <Icon icon="ic:sharp-skip-next" color="white" width="30" height="27" />
             </div>
           </div>
           <div className="h-[40%] flex items-center font-thin  text-xs text-white text-opacity-60 mt-[6px] gap-2">
-            0.00 <Slider /> 2.21{" "}
+            {Math.round(currentTime)} <Slider /> {audio?.duration}
           </div>
         </div>
         <div className="w-[550px] h-[57px] items-center justify-end flex text-white gap-3">

@@ -5,7 +5,6 @@ import { useState } from "react";
 import { SongListDisplay } from "../../components/songlistdisplay";
 
 export default function Playlist() {
-  const [audioRef, setAudioRef] = useState<HTMLAudioElement>();
   const router = useRouter();
   const { pid } = router.query;
 
