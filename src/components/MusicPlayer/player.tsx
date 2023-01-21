@@ -3,7 +3,6 @@ import { VolumeSlider } from "./volumeslider";
 import { Slider } from "./slider";
 import { useEffect, useState } from "react";
 import { useAudio } from "../hooks/useAudio";
-import { playlists } from "../../lists";
 
 export function Player() {
   const { audio, PlaySong, isPlaying, PauseSong, currentSong } = useAudio();
