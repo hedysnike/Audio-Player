@@ -32,7 +32,9 @@ export function SongListDisplay(props: SongListDisplayProps) {
       >
         <div>
           {isThisPlaying ? (
+            <div className="w-[37px]" >
             <Icon icon={icon} color="white" width="25" height="20" onClick={onclick} />
+            </div>
           ) : (
             <div className="w-[25px] items-center flex justify-center mr-3">
               <div className={`${hovered ? "invisible w-0 h-0" : "visible"} `}>{props.song.number}</div>
