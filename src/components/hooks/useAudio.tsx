@@ -29,6 +29,7 @@ export const useAudioProvider = () => {
     }
   }, [audio]);
 
+
   function PlaySong(song: Song) {
     if (currentSong && currentSong.URL === song.URL) {
       if (isPlaying) {

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>τὰ φίλτατα</title>
+        <title>τὰ φίλτατα Nike</title>
         <meta name="description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

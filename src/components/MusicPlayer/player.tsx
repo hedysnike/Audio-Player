@@ -19,6 +19,13 @@ export function Player() {
   }, [audio]);
 
 
+  const duration = audio?.duration ? new Date(audio?.duration * 1000) : null;
+  const durationFormatted = duration ? duration.toLocaleTimeString("en-us", {
+    minute: "2-digit",
+    second: "2-digit"
+  }) : "";
+  
+    
 
   return (
     <div className="absolute bottom-0 w-full h-[91px] bg-[#181818] border-t border-solid opacity-[99%] border-white border-opacity-20">
@@ -52,7 +59,7 @@ export function Player() {
             </div>
           </div>
           <div className="h-[40%] flex items-center font-thin  text-xs text-white text-opacity-60 mt-[6px] gap-2">
-            {Math.round(currentTime)} <Slider /> {audio?.duration}
+            {Math.round(currentTime)} <Slider /> {durationFormatted}
           </div>
         </div>
         <div className="w-[550px] h-[57px] items-center justify-end flex text-white gap-3">
