@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { Layout } from "../components/Layout";
-import Playlists from "../components/playlists";
+import { Layout } from "./Layout";
+import Playlists from "./playlists";
 import React from "react";
 
 export function DesktopHome() {
@@ -16,8 +16,7 @@ export function DesktopHome() {
         <div className="flex">
           <div className="h-full w-1/6"></div>
           <div className="w-5/6 mt-10">
-            <div className="flex mb-8 justify-center w-full">
-            </div>
+            <div className="flex mb-8 justify-center w-full"></div>
             <div>
               <Playlists />
             </div>

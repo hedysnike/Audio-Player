@@ -1,7 +1,7 @@
 import { Layout } from "../components/Layout";
 import { GetServerSideProps } from "next";
-import { DesktopHome } from "./desktopindex";
-import MobileHome from "./mobileindex";
+import { DesktopHome } from "../components/desktopindex";
+import MobileHome from "../components/mobileindex";
 import { MobileLayout } from "../components/mobilecomponents/defaultcomponents/MobileLayout";
 
 export default function Home({ isMobile }: { isMobile: boolean }) {

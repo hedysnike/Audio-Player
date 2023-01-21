@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { MobileLayout } from "../components/mobilecomponents/defaultcomponents/MobileLayout";
+import { MobileLayout } from "./mobilecomponents/defaultcomponents/MobileLayout";
 
 export default function MobileHome() {
   return (
@@ -11,7 +11,7 @@ export default function MobileHome() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-gradient-to-b from-[#000000] to-[#2c2c2c] min-h-screen h-auto">
-        <div className="text-2xl text-white flex items-center justify-center h-96" >My Audio Web Player</div>
+        <div className="text-2xl text-white flex items-center justify-center h-96">My Audio Web Player</div>
       </main>
     </>
   );
