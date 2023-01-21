@@ -17,6 +17,13 @@
       }
     }, [audio]);
 
+    function handlePlayBack(value: any) {
+      if (audio) {
+        audio.currentTime = (value / 100) * audio.duration;
+      }
+    }
+    
+
     return (
       <SliderPrimitive.Root
         value={currentAudioTime}
@@ -24,6 +31,7 @@
         step={1}
         aria-label="value"
         className="relative flex h-2 w-[500px] touch-none items-center"
+        onValueChange={(value) => handlePlayBack(value)}
       >
         <SliderPrimitive.Track className="relative h-1 w-full grow rounded-full bg-white dark:bg-gray-800 bg-opacity-25 ">
           <SliderPrimitive.Range className="absolute h-full rounded-full bg-white dark:bg-white" />
