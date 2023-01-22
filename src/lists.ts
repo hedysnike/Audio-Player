@@ -84,6 +84,14 @@ export const playlists: Playlist[] = [
         number: "1",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Izzamuzzic+-+Instinct.mp3",
       },
+      {
+        id: 79542,
+        name: "The Last of Us",
+        artist: "The Last of Us",
+        Image: "2pac.jpg",
+        number: "2",
+        URL: "https://s3.console.aws.amazon.com/s3/object/audioplayernikkodev?region=eu-west-3&prefix=songs/unnamed/Mania+-+%D1%84%D1%80%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8+%D0%BA+%D1%82%D0%B5%D0%B1%D0%B5.mp3",
+      },
     ],
   },
   {
@@ -115,11 +123,19 @@ export const playlists: Playlist[] = [
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/JAY+Z%2C+Kanye+West+-+Otis+Redding.mp3",
       },
       {
+        id: 17821,
+        name: "TightRope",
+        artist: "xxxTentacion",
+        Image: "2pac.jpg",
+        number: "2",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/XXXTENTACION+-+Tightrope.mp3",
+      },
+      {
         id: 17892,
         name: "Trop Beau",
         artist: "Emma Peters",
         Image: "2pac.jpg",
-        number: "2",
+        number: "3",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/Lomepal+-+Trop+Beau.mp3",
       }
     ],
