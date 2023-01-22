@@ -204,12 +204,20 @@ export const playlists: Playlist[] = [
         number: "1",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/Metro+Boomin+-+No+Complaints.mp3",
       },
+      {
+        id: 45782,
+        name: "Who Shot Ya",
+        artist: "Biggie Smalls",
+        Image: "2pac.jpg",
+        number: "2",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/B.I.G.+-+Who+Shot+Ya.mp3",
+      },
     ],
   },
   {
     name: "Coming of Age 2",
     id: 178942,
-    Image: "https://i.imgur.com/oaVaNR9.jpg",
+    Image: "Natela.jpg",
     songlist: [
       {
         id: 17892,
@@ -219,12 +227,14 @@ export const playlists: Playlist[] = [
         number: "1",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/XXXTENTACION+-+Tightrope.mp3",
       },
+    ],
+    songlist2: [
       {
-        id: 17893,
+        id: 13891,
         name: "You Are My High",
         artist: "Snake",
         Image: "https://i.imgur.com/pkVwrqH.jpg",
-        number: "2",
+        number: "1",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/You+Are+My+High.mp3",
       },
     ],

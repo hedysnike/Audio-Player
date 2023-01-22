@@ -14,6 +14,15 @@ export default function Playlist() {
     return <div>Playlist not found</div>;
   }
 
+  const handlePaart = () => {
+    if (selectPlaylist.songlist2) {
+      return (
+        <div className="text-white text-lg mt-20 mb-2">Part 1</div>
+      )
+    }
+  }
+  
+
   return (
     <>
       <div className="bg-gradient-to-br from-[#000000] to-[#1A1A1A] min-h-screen h-auto">
@@ -24,6 +33,10 @@ export default function Playlist() {
             <div className="text-white pt-10 px-20">Start Playing</div>
             <div className="p-20 pt-10 justify-center w-full text-white">
               {selectPlaylist.songlist.map((s) => (
+                <SongListDisplay key={s.id} song={s} />
+              ))}
+               <div>{handlePaart()}</div>
+              {selectPlaylist.songlist2?.map((s) => (
                 <SongListDisplay key={s.id} song={s} />
               ))}
             </div>

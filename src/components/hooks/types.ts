@@ -12,4 +12,5 @@ export interface Playlist {
     id: number,
     Image: string,
     songlist: Song[]
+    songlist2?: Song[]
 }
