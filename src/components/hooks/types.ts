@@ -9,6 +9,7 @@ export interface Song {
 
 export interface Playlist {
     name: string,
+    subtitle?: string,
     id: number,
     Image: string,
     songlist: Song[]

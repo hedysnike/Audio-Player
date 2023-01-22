@@ -110,7 +110,7 @@ export const playlists: Playlist[] = [
       },
       {
         id: 79545,
-        name: "მე ყოველთვის მოგცემ რასაც მთხოვ",
+        name: "მე ყოველთვის მოგცემ",
         artist: "ლადო ნავერიანი",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "5",
@@ -126,35 +126,36 @@ export const playlists: Playlist[] = [
       },
       {
         id: 79547,
-        name: "ასე თუ მტკიოდი ♥",
-        artist: "Folk Bend",
+        name: "♥",
+        artist: "♥",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "7",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/asetumtkiodi.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/mayasuka.mp3"
+
       },
       {
         id: 79548,
-        name: "წუთებს დაკარგულს",
-        artist: "ბალაბანი",
+        name: "Прятки",
+        artist: "HammAli & Navai",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "8",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/dakarguliwutebi.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/HammAli+%26+Navai+-+pratki.mp3"
       },
       {
         id: 79549,
-        name: "Листок",
-        artist: "Xcho",
+        name: "წუთებს დაკარგულს",
+        artist: "ბალაბანი",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "9",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Xcho+-+listok.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/dakarguliwutebi.mp3"
       },
       {
         id: 795410,
-        name: "ჩემიсука",
-        artist: "მე",
+        name: "Листок",
+        artist: "Xcho",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "10",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/mayasuka.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Xcho+-+listok.mp3"
       },
       {
         id: 795411,
@@ -166,7 +167,7 @@ export const playlists: Playlist[] = [
       },
       {
         id: 795412,
-        name: "ჩამეხუტე რა ♥",
+        name: "ჩამეხუტე ♥",
         artist: "ს",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "12",
@@ -182,11 +183,11 @@ export const playlists: Playlist[] = [
       },
       {
         id: 795414,
-        name: "Прятки",
-        artist: "HammAli & Navai",
+        name: "ასე თუ მტკიოდი ♥",
+        artist: "Folk Bend",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "14",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/HammAli+%26+Navai+-+pratki.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/asetumtkiodi.mp3"
       },
 
     ],
@@ -220,7 +221,7 @@ export const playlists: Playlist[] = [
     Image: "Natela.jpg",
     songlist: [
       {
-        id: 17892,
+        id: 13491,
         name: "TightRope",
         artist: "xxxTentacion",
         Image: "https://i.imgur.com/pkVwrqH.jpg",

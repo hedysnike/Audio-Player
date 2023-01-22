@@ -21,7 +21,22 @@ export default function Playlist() {
       )
     }
   }
-  
+  const handlePart = () => {
+    if (selectPlaylist.songlist2) {
+      return (
+        <div className="text-white text-lg mb-2">Part 2</div>
+      )
+    }
+  }
+
+
+  const handleSubtitle = () => {
+    if (selectPlaylist.subtitle) {
+      return (
+        <div className="text-white text-2xl p-2 text-center">{selectPlaylist.subtitle}</div>
+      )
+    }
+  }
 
   return (
     <>
@@ -30,8 +45,10 @@ export default function Playlist() {
           <div className="h-full w-1/6"></div>
           <div className="w-5/6 mt-10">
             <div className="text-white text-4xl p-2 text-center">{selectPlaylist.name}</div>
+            <div>{handleSubtitle()}</div>
             <div className="text-white pt-10 px-20">Start Playing</div>
             <div className="p-20 pt-10 justify-center w-full text-white">
+              <div>{handlePart()}</div>
               {selectPlaylist.songlist.map((s) => (
                 <SongListDisplay key={s.id} song={s} />
               ))}
