@@ -90,7 +90,7 @@ export const playlists: Playlist[] = [
         artist: "Mania",
         Image: "2pac.jpg",
         number: "2",
-        URL: "https://s3.console.aws.amazon.com/s3/object/audioplayernikkodev?region=eu-west-3&prefix=songs/unnamed/Mania+-+%D1%84%D1%80%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8+%D0%BA+%D1%82%D0%B5%D0%B1%D0%B5.mp3",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Mania+-+phrases+to+you.mp3",
       },
     ],
   },
