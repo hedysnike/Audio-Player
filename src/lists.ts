@@ -80,18 +80,115 @@ export const playlists: Playlist[] = [
         id: 79541,
         name: "Instinct",
         artist: "",
-        Image: "2pac.jpg",
+        Image: "https://i.imgur.com/YMXYa0O.png",
         number: "1",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Izzamuzzic+-+Instinct.mp3",
       },
       {
         id: 79542,
-        name: "phrases to you",
+        name: "фразами к тебе ",
         artist: "Mania",
-        Image: "2pac.jpg",
+        Image: "https://i.imgur.com/YMXYa0O.png",
         number: "2",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Mania+-+phrases+to+you.mp3",
       },
+      {
+        id: 79543,
+        name: "Ты Не Королева",
+        artist: "Artist",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "3",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/tinekaraleva.mp3"
+      },
+      {
+        id: 79544,
+        name: "Целуй меня",
+        artist: "Мария Чайкоиская",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "4",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/kissme.mp3"
+      },
+      {
+        id: 79545,
+        name: "მე ყოველთვის მოგცემ რასაც მთხოვ",
+        artist: "ლადო ნავერიანი",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "5",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/meyoveltvismogce.mp3"
+      },
+      {
+        id: 79546,
+        name: "გისველდება თმები",
+        artist: "გიორგი ტიგინაშვილი",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "6",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Giorgi+Tiginashvili+++Gisveldeba+Tmebi.mp3"
+      },
+      {
+        id: 79547,
+        name: "ასე თუ მტკიოდი ♥",
+        artist: "Folk Bend",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "7",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/asetumtkiodi.mp3"
+      },
+      {
+        id: 79548,
+        name: "წუთებს დაკარგულს",
+        artist: "ბალაბანი",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "8",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/dakarguliwutebi.mp3"
+      },
+      {
+        id: 79549,
+        name: "Листок",
+        artist: "Xcho",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "9",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Xcho+-+listok.mp3"
+      },
+      {
+        id: 795410,
+        name: "ჩემიсука",
+        artist: "მე",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "10",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/mayasuka.mp3"
+      },
+      {
+        id: 795411,
+        name: "მინდა რომ",
+        artist: "Pajo",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "11",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/minda+rom.mp3"
+      },
+      {
+        id: 795412,
+        name: "ჩამეხუტე რა ♥",
+        artist: "ს",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "12",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Chamexute+ra.mp3"
+      },
+      {
+        id: 795413,
+        name: "მომყევი გთხოვ",
+        artist: "Pajo",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "13",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/momyevigtxov.mp3"
+      },
+      {
+        id: 795414,
+        name: "Прятки",
+        artist: "HammAli & Navai",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "14",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/HammAli+%26+Navai+-+pratki.mp3"
+      },
+
     ],
   },
   {
@@ -110,6 +207,29 @@ export const playlists: Playlist[] = [
     ],
   },
   {
+    name: "Coming of Age 2",
+    id: 178942,
+    Image: "https://i.imgur.com/oaVaNR9.jpg",
+    songlist: [
+      {
+        id: 17892,
+        name: "TightRope",
+        artist: "xxxTentacion",
+        Image: "https://i.imgur.com/pkVwrqH.jpg",
+        number: "1",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/XXXTENTACION+-+Tightrope.mp3",
+      },
+      {
+        id: 17893,
+        name: "You Are My High",
+        artist: "Snake",
+        Image: "https://i.imgur.com/pkVwrqH.jpg",
+        number: "2",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/You+Are+My+High.mp3",
+      },
+    ],
+  },
+  {
     name: "Coming of Age",
     id: 178941,
     Image: "blacktbilisi.jfif",
@@ -123,19 +243,11 @@ export const playlists: Playlist[] = [
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/JAY+Z%2C+Kanye+West+-+Otis+Redding.mp3",
       },
       {
-        id: 17821,
-        name: "TightRope",
-        artist: "xxxTentacion",
-        Image: "2pac.jpg",
-        number: "2",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/XXXTENTACION+-+Tightrope.mp3",
-      },
-      {
         id: 17892,
         name: "Trop Beau",
         artist: "Emma Peters",
         Image: "2pac.jpg",
-        number: "3",
+        number: "2",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/Lomepal+-+Trop+Beau.mp3",
       }
     ],

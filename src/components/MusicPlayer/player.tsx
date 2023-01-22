@@ -34,7 +34,7 @@ export function Player() {
     : "";
 
   return (
-    <div className="absolute bottom-0 w-full h-[91px] bg-[#181818] border-t border-solid opacity-[99%] border-white border-opacity-20">
+    <div className="fixed bottom-0 w-full h-[91px] bg-[#181818] border-t border-solid opacity-[99%] border-white border-opacity-20">
       <div className="h-full justify-center flex items-center">
         <div className="w-[550px] h-[57px] items-center flex">
           <img src="https://i.imgur.com/gZBUHR6.jpeg" alt="cat" className="w-14 h-14 ml-4" />

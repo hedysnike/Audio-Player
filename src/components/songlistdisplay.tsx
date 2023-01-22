@@ -48,7 +48,7 @@ export function SongListDisplay(props: SongListDisplayProps) {
           )}
         </div>
         <div className="pr-5">
-          <img src="https://i.imgur.com/3SgsMxh.jpg" className="w-10 h-10 py-1" alt="pac" />
+          <img src="https://i.imgur.com/dofy3YP.png" className="w-10 h-10 py-1" alt="pac" />
         </div>
         <div>{props.song.name}</div>
         <div className="ml-auto">3.15</div>
