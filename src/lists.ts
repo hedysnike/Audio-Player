@@ -231,11 +231,27 @@ export const playlists: Playlist[] = [
     ],
     songlist2: [
       {
+        id: 13893,
+        name: "test and recognize",
+        artist: "s",
+        Image: "https://i.imgur.com/pkVwrqH.jpg",
+        number: "1",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/seekae+-+test+%26+recognize.mp3",
+      },
+      {
+        id: 13892,
+        name: "Funeral Of Our Fire!",
+        artist: "s",
+        Image: "https://i.imgur.com/pkVwrqH.jpg",
+        number: "2",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/Shadden+Fahim+-+Funeral+Of+Our+Fire.mp3",
+      },
+      {
         id: 13891,
         name: "You Are My High",
         artist: "Snake",
         Image: "https://i.imgur.com/pkVwrqH.jpg",
-        number: "1",
+        number: "3",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/You+Are+My+High.mp3",
       },
     ],
