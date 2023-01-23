@@ -16,10 +16,9 @@ export default function MobilePlaylist() {
   return (
     <>
       <div className="bg-gradient-to-br from-[#000000] to-[#1A1A1A] min-h-screen h-auto">
-        <div className="flex flex-col  text-white">
+        <div className="flex flex-col  text-white pb-10">
           <div className="justify-center mt-10 flex "><img src={`/${selecttPlaylist.Image}`} alt="" className="w-[50%] h-[50%]" /></div>
           <div className="text-2xl my-10 text-center">{selecttPlaylist.name}</div>
-          <div></div>
           <div className="flex-row flex border-b border-solid border-white border-opacity-80 mx-2">
             <div>#</div>
             <div>TITLE</div>

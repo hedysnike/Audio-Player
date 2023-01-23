@@ -5,9 +5,9 @@ import { MobileMenu } from "./MobileMenu";
 export function MobileLayout({ children }: PropsWithChildren) {
   return (
     <div>
-      <main>{children}</main>
+      <main className="relative">{children}</main>
+      <div className="absolute bottom-0 w-full"><MobilePlayer /></div>
       <MobileMenu />
-      <MobilePlayer />
     </div>
   );
 }

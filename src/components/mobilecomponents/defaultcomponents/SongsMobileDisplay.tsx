@@ -1,5 +1,4 @@
 import { Icon } from "@iconify/react";
-import { useState } from "react";
 import { Song } from "../../hooks/types";
 import { useAudio } from "../../hooks/useAudio";
 
