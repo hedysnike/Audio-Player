@@ -54,12 +54,12 @@ export const playlists: Playlist[] = [
     Image: "techno.jpg",
     songlist: [
       {
-        id: 94731,
-        name: "Light",
-        artist: "Death Note",
+        id: 94733,
+        name: "Hell on Earth",
+        artist: "Kasst",
         Image: "2pac.jpg",
         number: "1",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/Death+Note+-+Light's+Theme.mp3",
+        URL: "https://s3.console.aws.amazon.com/s3/object/audioplayernikkodev?region=eu-west-3&prefix=songs/moments/KAS_ST+-+Hell+On+Earth.mp3",
       },
       {
         id: 94732,
@@ -70,20 +70,20 @@ export const playlists: Playlist[] = [
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/KAS_ST+-+Insomnia.mp3",
       },
       {
-        id: 94733,
-        name: "Hell on Earth",
-        artist: "Kasst",
-        Image: "2pac.jpg",
-        number: "3",
-        URL: "https://s3.console.aws.amazon.com/s3/object/audioplayernikkodev?region=eu-west-3&prefix=songs/moments/KAS_ST+-+Hell+On+Earth.mp3",
-      },
-      {
         id: 94734,
         name: "A",
         artist: "Theme",
         Image: "2pac.jpg",
-        number: "4",
+        number: "3",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/Mello's+Theme.mp3",
+      },
+      {
+        id: 94731,
+        name: "Light",
+        artist: "Death Note",
+        Image: "2pac.jpg",
+        number: "4",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/Death+Note+-+Light's+Theme.mp3",
       },
       {
         id: 94735,
