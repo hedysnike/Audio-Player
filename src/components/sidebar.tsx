@@ -16,7 +16,9 @@ export default function Sidebar() {
           <Link href="/">
           <div className="my-3">Home</div>
           </Link>
+          <Link href="/songs">
             <div className="my-3">Songs</div>
+            </Link>
             <div className="my-3">Lyrics</div>
         </div>
       </div>

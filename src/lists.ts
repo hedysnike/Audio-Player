@@ -208,10 +208,58 @@ export const playlists: Playlist[] = [
       {
         id: 45782,
         name: "Who Shot Ya",
-        artist: "Biggie Smalls",
+        artist: "Notorious BIG",
         Image: "2pac.jpg",
         number: "2",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/B.I.G.+-+Who+Shot+Ya.mp3",
+      },
+      {
+        id: 45783,
+        name: "Bleed II",
+        artist: "Notorious BIG",
+        Image: "2pac.jpg",
+        number: "3",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/The+Notorious+B.I.G+-+Niggas+Bleed+II.mp3"
+      },
+      {
+        id: 45785,
+        name: "Sideways",
+        artist: "2Pac Notorious BIG",
+        Image: "2pac.jpg",
+        number: "4",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/Biggie+%26+2Pac+-+Sideways.mp3"
+      },
+      {
+        id: 45786,
+        name: "Runnin'",
+        artist: "Notorious BIG",
+        Image: "2pac.jpg",
+        number: "5",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/The+Notorious+B.I.G.+ft.+2Pac+-+Runnin'.mp3"
+      },
+      {
+        id: 45787,
+        name: "Psychos",
+        artist: "Notorious BIG",
+        Image: "2pac.jpg",
+        number: "6",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/2Pac+%26+Biggie+-+Psychos.mp3"
+      },
+      {
+        id: 45788,
+        name: "a day in the life of a fool",
+        artist: "Notorious BIG",
+        Image: "2pac.jpg",
+        number: "7",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/Notorious+BIG+-+A+Day+in+the+Life+of+a+Fool.mp3"
+      },
+      {
+        id: 45789,
+        name: "dolya",
+        artist: "Notorious BIG",
+        Image: "2pac.jpg",
+        number: "8",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/Dolya+Vorovskaya.mp3"
       },
     ],
   },
