@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 import { useState } from "react";
 import { Song } from "./hooks/types";
 import { useAudio } from "./hooks/useAudio";
@@ -48,7 +49,7 @@ export function SongListDisplay(props: SongListDisplayProps) {
           )}
         </div>
         <div className="pr-5">
-          <img src="https://i.imgur.com/dofy3YP.png" className="w-10 h-10 py-1" alt="pac" />
+          <Image src={props.song.Image} width={40} height={40} className=" py-1" alt="image" />
         </div>
         <div>{props.song.name}</div>
         <div className="ml-auto">3.15</div>
