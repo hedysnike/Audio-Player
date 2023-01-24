@@ -33,7 +33,7 @@ export function MobilePlayer() {
     : "";
 
   return (
-    <div className=" w-full h-[91px] bg-[#1c1c1c] border-t border-solid opacity-[99%] border-white border-opacity-20">
+    <div className="fixed bottom-0 w-full h-[91px] bg-[#1c1c1c] border-t border-solid opacity-[99%] border-white border-opacity-20">
       <div className="h-full flex flex-col">
         <div className="flex-raw flex">
           <div className="items-center flex w-full">
