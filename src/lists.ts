@@ -154,7 +154,7 @@ export const playlists: Playlist[] = [
         artist: "♥",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "7",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/mayasuka.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Sex+narkotiki.mp3"
 
       },
       {
