@@ -205,7 +205,14 @@ export const playlists: Playlist[] = [
         number: "14",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/asetumtkiodi.mp3"
       },
-
+      {
+        id: 795415,
+        name: "გიმღერი",
+        artist: "Datuna alaphishvili",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "15",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Gimgheri.mp3"
+      },
     ],
   },
   {
