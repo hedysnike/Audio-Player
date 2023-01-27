@@ -215,6 +215,23 @@ export const playlists: Playlist[] = [
       },
       {
         id: 795415,
+        name: "Сияй",
+        artist: "Ramil",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "15",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/siai.mp3"
+        
+      },
+      {
+        id: 795416,
+        name: "😔❤️",
+        artist: "NЮ",
+        Image: "https://i.imgur.com/YMXYa0O.png",
+        number: "16",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/lovu.mp3"
+      },
+      {
+        id: 795415,
         name: "გიმღერი",
         artist: "Datuna alaphishvili",
         Image: "https://i.imgur.com/YMXYa0O.png",
