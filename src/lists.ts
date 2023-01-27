@@ -49,7 +49,7 @@ export const playlists: Playlist[] = [
         id: 94737,
         name: "Love Story - The End",
         artist: "Beethoven",
-        Image: "https://i.imgur.com/ioC4B69.png",
+        Image: "https://i.imgur.com/obwfQpN.png",
         number: "3",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/Francis+Lai+-+Theme+From+Love+Story.mp3",
       },
