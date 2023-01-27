@@ -46,11 +46,19 @@ export const playlists: Playlist[] = [
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/Rosa+Ansch%C3%BCtz+-+Rigid.mp3",
       },
       {
+        id: 94737,
+        name: "Love Story - The End",
+        artist: "Beethoven",
+        Image: "https://i.imgur.com/ioC4B69.png",
+        number: "3",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/Francis+Lai+-+Theme+From+Love+Story.mp3",
+      },
+      {
         id: 94733,
         name: "Hell on Earth",
         artist: "Kasst",
         Image: "https://i.imgur.com/36axOj2.png",
-        number: "3",
+        number: "4",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/KAS_ST+-+Hell+On+Earth.mp3",
       },
       {
@@ -58,7 +66,7 @@ export const playlists: Playlist[] = [
         name: "Insomnia",
         artist: "Kasst",
         Image: "https://i.imgur.com/7zqz7Qi.png",
-        number: "4",
+        number: "5",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/KAS_ST+-+Insomnia.mp3",
       },
       {
@@ -66,7 +74,7 @@ export const playlists: Playlist[] = [
         name: "A",
         artist: "Theme",
         Image: "https://i.imgur.com/dMamn6v.jpg",
-        number: "5",
+        number: "6",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/Mello's+Theme.mp3",
       },
       {
@@ -74,7 +82,7 @@ export const playlists: Playlist[] = [
         name: "Light",
         artist: "Death Note",
         Image: "https://i.imgur.com/dMamn6v.jpg",
-        number: "6",
+        number: "7",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/Death+Note+-+Light's+Theme.mp3",
       },
       {
@@ -82,7 +90,7 @@ export const playlists: Playlist[] = [
         name: "B",
         artist: "Theme",
         Image: "https://i.imgur.com/dMamn6v.jpg",
-        number: "7",
+        number: "8",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/Mello's+Theme+B.mp3",
       },
     ],
