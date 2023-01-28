@@ -303,11 +303,11 @@ export const playlists: Playlist[] = [
       },
       {
         id: 45789,
-        name: "dolya",
-        artist: "Notorious BIG",
+        name: "Babushka Boi",
+        artist: "A$AP Rocky",
         Image: "",
         number: "8",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/Dolya+Vorovskaya.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/A%24AP+Rocky+-+Babushka+Boi.mp3"
       },
     ],
   },
@@ -463,11 +463,11 @@ export const playlists: Playlist[] = [
       },
       {
         id: 178912,
-        name: "Babushka Boi",
-        artist: "A$AP Rocky",
+        name: "Dolya",
+        artist: "Vorovskaya",
         Image: "https://i.imgur.com/645WVY5.jpg",
         number: "12",
-        URL: "",
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/Dolya+Vorovskaya.mp3",
       },
       {
         id: 178913,
