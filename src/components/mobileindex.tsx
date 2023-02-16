@@ -10,7 +10,7 @@ export default function MobileHome() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gradient-to-b from-[#000000] to-[#2c2c2c] min-h-[60vh] h-auto">
+      <main className="bg-gradient-to-b from-[#000000] to-[#2c2c2c] min-h-[84vh] h-auto">
         <div className="flex items-center justify-center text-2xl text-white h-96">Nikko </div>
       </main>
     </>
