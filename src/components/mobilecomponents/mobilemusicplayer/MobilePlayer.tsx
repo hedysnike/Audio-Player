@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import { MobileSlider } from "./mobileslider";
 import { useEffect, useState } from "react";
-import { useAudio } from "../../hooks/useAudio";
+import { useAudio } from "@/lib/hooks/useAudio";
 
 export function MobilePlayer() {
   const { audio, PlaySong, isPlaying, PauseSong, currentSong } = useAudio();
@@ -10,7 +10,9 @@ export function MobilePlayer() {
   useEffect(() => {
     if (audio) {
       const intervalId = setInterval(() => {
-        const Time = audio?.currentTime ? new Date(audio?.currentTime * 1000) : null;
+        const Time = audio?.currentTime
+          ? new Date(audio?.currentTime * 1000)
+          : null;
         const currentTimeFormatted = Time
           ? Time.toLocaleTimeString("en-us", {
               minute: "2-digit",
@@ -45,7 +47,13 @@ export function MobilePlayer() {
           </div>
           <div className="items-right justify-right mr-5">
             {isPlaying ? (
-              <Icon icon="material-symbols:pause-circle" color="white" width="37" height="37" onClick={PauseSong} />
+              <Icon
+                icon="material-symbols:pause-circle"
+                color="white"
+                width="37"
+                height="37"
+                onClick={PauseSong}
+              />
             ) : (
               currentSong !== undefined && (
                 <Icon
@@ -62,7 +70,7 @@ export function MobilePlayer() {
         <div>
           <div className="mt-4 w-[80%] mr-auto ml-auto flex items-center font-thin  text-xs text-white text-opacity-60 ">
             {currentTime}
-            <MobileSlider /> 
+            <MobileSlider />
             {durationFormatted}
           </div>
         </div>

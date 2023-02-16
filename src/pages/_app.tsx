@@ -1,16 +1,10 @@
 import "../styles/globals.css";
-import { AudioProvider } from "../components/hooks/useAudio";
-import PlausibleProvider from "next-plausible";
+import { AudioProvider } from "@/lib/hooks/useAudio";
+import { ApiProvider } from "@/lib/hooks/useApi";
 
 export default function App({ Component, pageProps, isMobile }: any) {
   return (
-    <PlausibleProvider
-      domain="music-nikkodev.vercel.app"
-      scriptProps={{
-        defer: true,
-        src: "analytics.sunney.dev/js/script.js",
-      }}
-    >
+    <ApiProvider>
       <AudioProvider>
         {Component.Layout ? (
           <Component.Layout>
@@ -20,6 +14,6 @@ export default function App({ Component, pageProps, isMobile }: any) {
           <Component {...pageProps} />
         )}
       </AudioProvider>
-    </PlausibleProvider>
+    </ApiProvider>
   );
 }

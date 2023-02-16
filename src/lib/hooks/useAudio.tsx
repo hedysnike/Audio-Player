@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { Song } from "./types";
+import { Song } from "@/lib/types";
 
 const AudioContext = createContext<{
   audio: HTMLAudioElement | null;
@@ -29,7 +29,6 @@ export const useAudioProvider = () => {
     }
   }, [audio]);
 
-
   function PlaySong(song: Song) {
     if (currentSong && currentSong.URL === song.URL) {
       if (isPlaying) {
@@ -58,10 +57,13 @@ export const useAudioProvider = () => {
 };
 
 export const AudioProvider = ({ children }: { children: React.ReactNode }) => {
-  const { audio, PlaySong, isPlaying, PauseSong, currentSong } = useAudioProvider();
+  const { audio, PlaySong, isPlaying, PauseSong, currentSong } =
+    useAudioProvider();
 
   return (
-    <AudioContext.Provider value={{ audio, PlaySong, isPlaying, PauseSong, currentSong }}>
+    <AudioContext.Provider
+      value={{ audio, PlaySong, isPlaying, PauseSong, currentSong }}
+    >
       {children}
     </AudioContext.Provider>
   );

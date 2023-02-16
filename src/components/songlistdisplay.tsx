@@ -1,8 +1,8 @@
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import { useState } from "react";
-import { Song } from "./hooks/types";
-import { useAudio } from "./hooks/useAudio";
+import { Song } from "@/lib/types";
+import { useAudio } from "@/lib/hooks/useAudio";
 
 interface SongListDisplayProps {
   song: Song;
@@ -32,11 +32,19 @@ export function SongListDisplay(props: SongListDisplayProps) {
         <div>
           {isThisPlaying ? (
             <div className="w-[37px]">
-              <Icon icon={icon} color="white" width="25" height="20" onClick={onclick} />
+              <Icon
+                icon={icon}
+                color="white"
+                width="25"
+                height="20"
+                onClick={onclick}
+              />
             </div>
           ) : (
             <div className="w-[25px] items-center flex justify-center mr-3">
-              <div className={`${hovered ? "invisible w-0 h-0" : "visible"} `}>{props.song.number}</div>
+              <div className={`${hovered ? "invisible w-0 h-0" : "visible"} `}>
+                {props.song.number}
+              </div>
               <Icon
                 icon="ic:baseline-play-arrow"
                 color="white"
@@ -49,7 +57,13 @@ export function SongListDisplay(props: SongListDisplayProps) {
           )}
         </div>
         <div className="pr-5">
-          <Image src={props.song.Image} width={40} height={40} className=" py-1" alt="image" />
+          <Image
+            src={props.song.Image}
+            width={40}
+            height={40}
+            className=" py-1"
+            alt="image"
+          />
         </div>
         <div>{props.song.name}</div>
         <div className="ml-auto">3.15</div>
