@@ -1,6 +1,6 @@
 import * as SliderPrimitive from "@radix-ui/react-slider";
 import cx from "classnames";
-import { useAudio } from "../hooks/useAudio";
+import { useAudio } from "@/lib/hooks/useAudio";
 import { useEffect } from "react";
 
 interface Props {}

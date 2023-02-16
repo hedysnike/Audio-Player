@@ -1,4 +1,4 @@
-import { Playlist } from "./components/hooks/types";
+import { Playlist } from "@/lib/types";
 
 export const playlists: Playlist[] = [
   {
@@ -36,7 +36,7 @@ export const playlists: Playlist[] = [
         Image: "https://i.imgur.com/0MTvkvi.png",
         number: "1",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/moments/H%C3%A9ctor+Oaks+-+Chasing+Highs.mp3",
-      },  
+      },
       {
         id: 94736,
         name: "Rigid",
@@ -122,7 +122,7 @@ export const playlists: Playlist[] = [
         artist: "Artist",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "3",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/tinekaraleva.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/tinekaraleva.mp3",
       },
       {
         id: 79544,
@@ -130,7 +130,7 @@ export const playlists: Playlist[] = [
         artist: "Мария Чайкоиская",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "4",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/kissme.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/kissme.mp3",
       },
       {
         id: 79545,
@@ -138,7 +138,7 @@ export const playlists: Playlist[] = [
         artist: "ლადო ნავერიანი",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "5",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/meyoveltvismogce.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/meyoveltvismogce.mp3",
       },
       {
         id: 79546,
@@ -146,7 +146,7 @@ export const playlists: Playlist[] = [
         artist: "გიორგი ტიგინაშვილი",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "6",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Giorgi+Tiginashvili+++Gisveldeba+Tmebi.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Giorgi+Tiginashvili+++Gisveldeba+Tmebi.mp3",
       },
       {
         id: 79547,
@@ -154,8 +154,7 @@ export const playlists: Playlist[] = [
         artist: "♥",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "7",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Sex+narkotiki.mp3"
-
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Sex+narkotiki.mp3",
       },
       {
         id: 79548,
@@ -163,7 +162,7 @@ export const playlists: Playlist[] = [
         artist: "HammAli & Navai",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "8",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/HammAli+%26+Navai+-+pratki.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/HammAli+%26+Navai+-+pratki.mp3",
       },
       {
         id: 79549,
@@ -171,7 +170,7 @@ export const playlists: Playlist[] = [
         artist: "ბალაბანი",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "9",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/dakarguliwutebi.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/dakarguliwutebi.mp3",
       },
       {
         id: 795410,
@@ -179,7 +178,7 @@ export const playlists: Playlist[] = [
         artist: "Xcho",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "10",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Xcho+-+listok.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Xcho+-+listok.mp3",
       },
       {
         id: 795411,
@@ -187,7 +186,7 @@ export const playlists: Playlist[] = [
         artist: "Pajo",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "11",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/minda+rom.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/minda+rom.mp3",
       },
       {
         id: 795412,
@@ -195,7 +194,7 @@ export const playlists: Playlist[] = [
         artist: "ს",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "12",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Chamexute+ra.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Chamexute+ra.mp3",
       },
       {
         id: 795413,
@@ -203,7 +202,7 @@ export const playlists: Playlist[] = [
         artist: "Pajo",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "13",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/momyevigtxov.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/momyevigtxov.mp3",
       },
       {
         id: 795414,
@@ -211,7 +210,7 @@ export const playlists: Playlist[] = [
         artist: "Folk Bend",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "14",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/asetumtkiodi.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/asetumtkiodi.mp3",
       },
       {
         id: 795415,
@@ -219,8 +218,7 @@ export const playlists: Playlist[] = [
         artist: "Ramil",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "15",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/siai.mp3"
-        
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/siai.mp3",
       },
       {
         id: 795416,
@@ -228,7 +226,7 @@ export const playlists: Playlist[] = [
         artist: "NЮ",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "16",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/lovu.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/lovu.mp3",
       },
       {
         id: 795415,
@@ -236,7 +234,7 @@ export const playlists: Playlist[] = [
         artist: "Datuna alaphishvili",
         Image: "https://i.imgur.com/YMXYa0O.png",
         number: "15",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Gimgheri.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/unnamed/Gimgheri.mp3",
       },
     ],
   },
@@ -267,7 +265,7 @@ export const playlists: Playlist[] = [
         artist: "Notorious BIG",
         Image: "",
         number: "3",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/The+Notorious+B.I.G+-+Niggas+Bleed+II.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/The+Notorious+B.I.G+-+Niggas+Bleed+II.mp3",
       },
       {
         id: 45785,
@@ -275,7 +273,7 @@ export const playlists: Playlist[] = [
         artist: "2Pac Notorious BIG",
         Image: "",
         number: "4",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/Biggie+%26+2Pac+-+Sideways.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/Biggie+%26+2Pac+-+Sideways.mp3",
       },
       {
         id: 45786,
@@ -283,7 +281,7 @@ export const playlists: Playlist[] = [
         artist: "Notorious BIG",
         Image: "",
         number: "5",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/The+Notorious+B.I.G.+ft.+2Pac+-+Runnin'.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/The+Notorious+B.I.G.+ft.+2Pac+-+Runnin'.mp3",
       },
       {
         id: 45787,
@@ -291,7 +289,7 @@ export const playlists: Playlist[] = [
         artist: "Notorious BIG",
         Image: "",
         number: "6",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/2Pac+%26+Biggie+-+Psychos.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/2Pac+%26+Biggie+-+Psychos.mp3",
       },
       {
         id: 45788,
@@ -299,7 +297,7 @@ export const playlists: Playlist[] = [
         artist: "Notorious BIG",
         Image: "",
         number: "7",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/Notorious+BIG+-+A+Day+in+the+Life+of+a+Fool.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/Notorious+BIG+-+A+Day+in+the+Life+of+a+Fool.mp3",
       },
       {
         id: 45789,
@@ -307,7 +305,7 @@ export const playlists: Playlist[] = [
         artist: "A$AP Rocky",
         Image: "",
         number: "8",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/A%24AP+Rocky+-+Babushka+Boi.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/streets/A%24AP+Rocky+-+Babushka+Boi.mp3",
       },
     ],
   },
@@ -395,7 +393,7 @@ export const playlists: Playlist[] = [
         artist: "Pchola Kosmos Fly",
         Image: "https://i.imgur.com/645WVY5.jpg",
         number: "3",
-        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/Brigada+++Pchola+%2C+Kosmos+%2C+Fily+Songs.mp3"
+        URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/Brigada+++Pchola+%2C+Kosmos+%2C+Fily+Songs.mp3",
       },
       {
         id: 17894,
@@ -549,7 +547,6 @@ export const playlists: Playlist[] = [
         number: "22",
         URL: "https://audioplayernikkodev.s3.eu-west-3.amazonaws.com/songs/age/Kanye+West+-+Clique+ft.+Big+Sean+%26+Jay-Z.mp3",
       },
-
     ],
   },
 ];

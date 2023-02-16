@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
-import { Song } from "../../hooks/types";
-import { useAudio } from "../../hooks/useAudio";
+import { Song } from "@/lib/types";
+import { useAudio } from "@/lib/hooks/useAudio";
 
 interface SongListDisplayProps {
   song: Song;
@@ -26,7 +26,14 @@ export function SongsMobileDisplay(props: SongListDisplayProps) {
         <div className="flex flex-row my-2">
           {isThisPlaying ? (
             <div>
-              <Icon className="mr-2" icon={icon} color="white" width="25" height="20" onClick={onclick} />
+              <Icon
+                className="mr-2"
+                icon={icon}
+                color="white"
+                width="25"
+                height="20"
+                onClick={onclick}
+              />
             </div>
           ) : (
             <div className="mr-2">
