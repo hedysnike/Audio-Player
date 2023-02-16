@@ -4,22 +4,18 @@ import Link from "next/link";
 export function MobileMenu() {
   return (
     <div className="w-full h-auto bg-[#1c1c1c] mb-[90px]">
-      <div className="text-white text-xs text-center grid grid-cols-4 py-2 mx-1">
+      <div className="grid grid-cols-3 py-2 mx-1 text-xs text-center text-white">
         <div>
-          <Link href="/playlist/mobiledisplay" className="h-auto w-auto flex items-center flex-col">
-            <Icon icon="ic:baseline-home" className="" color="white" width="25" height="25" /> <span>Playlists</span>
+          <Link href="/" className="flex flex-col items-center w-auto h-auto">
+            <Icon icon="ic:baseline-home" color="white" width="25" height="25" /> <span>Home</span>
           </Link>
         </div>
-        <div className="flex items-center flex-col">
-          {" "}
-          <Icon icon="ic:baseline-home" color="white" width="25" height="25" />
-          Music
-        </div>
-        <div className="flex items-center flex-col">
-          <Icon icon="ic:baseline-home" color="white" width="25" height="25" /> Lyrics
-        </div>
-        <div className="flex items-center flex-col">
-          <Icon icon="ic:baseline-home" color="white" width="25" height="25" />{" "}
+        <Link href="/playlist/mobiledisplay" className="flex flex-col items-center w-auto h-auto">
+          <Icon icon="mdi:playlist-music" color="white" width="25" height="25" />
+          Playlists
+        </Link>
+        <div className="flex flex-col items-center">
+          <Icon icon="ic:baseline-music-note" color="white" width="25" height="25" /> All Music
         </div>
       </div>
     </div>
