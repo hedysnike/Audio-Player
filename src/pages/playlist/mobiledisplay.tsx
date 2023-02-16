@@ -15,10 +15,10 @@ export default function MobileDisplay() {
       <main className="bg-gradient-to-br from-[#000000] to-[#252525] min-h-screen h-auto">
         <div className="grid grid-cols-2 pt-10">
           {playlists.map((i) => (
-            <div key={i.id} className="text-white p-5 pb-4 flex-col flex items-center">
+            <div key={i.id} className="flex flex-col items-center p-5 pb-4 text-white">
               <Link href="/mobileplaylist/[mid]" as={`/mobileplaylist/${i.id}`}>
                 <img src={`/${i.Image}`} alt="" className="w-full h-full aspect-square" />
-                <div className="text-sm my-2">{i.name}</div>
+                <div className="my-2 text-sm">{i.name}</div>
               </Link>
             </div>
           ))}

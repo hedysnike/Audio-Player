@@ -10,8 +10,8 @@ export default function MobileHome() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gradient-to-b from-[#000000] to-[#2c2c2c] min-h-screen h-auto">
-        <div className="text-2xl text-white flex items-center justify-center h-96">My Audio Web Player</div>
+      <main className="bg-gradient-to-b from-[#000000] to-[#2c2c2c] min-h-[60vh] h-auto">
+        <div className="flex items-center justify-center text-2xl text-white h-96">Nikko </div>
       </main>
     </>
   );
