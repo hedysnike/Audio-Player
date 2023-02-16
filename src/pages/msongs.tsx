@@ -7,9 +7,9 @@ export default function Msongs() {
   return (
     <div className="bg-gradient-to-br from-[#000000] to-[#1A1A1A] min-h-screen h-auto">
     <div className="flex flex-col pb-10 text-white">
-        <div className="my-20">Songs From All Playlists</div>
+        <div className="flex justify-center my-20">Songs From All Playlists</div>
       <div className="flex flex-row mx-2 border-b border-white border-solid border-opacity-80">
-        <div>Title:</div>
+        <div>Music Title:</div>
       </div>
       {playlists.map((p) => (
             <div key={p.id}>
