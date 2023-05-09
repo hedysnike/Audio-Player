@@ -5,6 +5,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import * as api from "lib/api"
+import { GetServerSideProps } from "next";
+import { MobileLayout } from "@/components/mobilecomponents/defaultcomponents/MobileLayout";
 export default function Register() {
 const router = useRouter();
 const { retry } = useUser();
@@ -24,9 +26,7 @@ const form = useForm({
       password: (value) =>
         value.length > 5 ? null : "პაროლი უნდა იყოს სულ მცირე 6 ასო",
       confirm_password: (value, values) =>
-        value === values.password ? null : "პაროლები არ ემთხვევა",
-        terms: (value) => value ? null : "You must accept the terms and conditions",
-          
+        value === values.password ? null : "პაროლები არ ემთხვევა",          
     },
   });
 
@@ -46,6 +46,7 @@ const form = useForm({
 
     return(
         <>
+        <MobileLayout>  
         <Head>
           <style type="text/css">
             {` 
@@ -63,10 +64,10 @@ const form = useForm({
   `}
           </style>
         </Head>
-          <div className="flex h-auto min-h-[95vh] justify-center bg-black py-[50px] pb-10">
-            <div className="h-fit max-w-4xl flex-col items-center justify-center rounded bg-white px-5 pb-24 md:w-[70%] md:px-24">
-              <div className="mt-10 mb-10 text-center">
-                <h1 className="text-2xl text-[#742361]">register</h1>
+          <div className="h-auto min-h-[100vh] bg-black py-[50px]">
+            <div className="h-fit flex-col mx-2 px-8 pt-1  items-center justify-center rounded bg-white pb-24 md:w-[70%] md:px-24">
+              <div className="my-10 text-center">
+                <h1 className="text-2xl text-[#742361]">Registration</h1>
               </div>
               <form
                 onSubmit={form.onSubmit((values) => {
@@ -84,14 +85,14 @@ const form = useForm({
                 })}
               >
                 <div className="flex flex-row items-center py-[9px]">
-                  <label className="w-[45%] text-sm">username</label>
+                  <label className="w-[45%] text-sm">Username</label>
                   
                   <div className="w-[55%]" >
   
                   {username && (
                     <div>
                       {usernameAvailable === false ? (
-                        <Input.Error>usernametaken</Input.Error>
+                        <Input.Error>Username is taken</Input.Error>
                         ) : ("")}
                     </div>
                   )}
@@ -108,7 +109,7 @@ const form = useForm({
   
   
                 <div className="flex flex-row items-center py-[9px]">
-                  <label className="w-[45%] text-sm">password</label>
+                  <label className="w-[45%] text-sm">Password</label>
                   <PasswordInput
                     {...form.getInputProps("password")}
                     className="w-[55%]"
@@ -118,7 +119,7 @@ const form = useForm({
   
                 <div className="flex flex-row items-center pt-[8px] pb-[7px]">
                   <label className="w-[45%] pr-2 text-sm">
-                    repeatpass
+                    Repeat Password
                   </label>
                   <PasswordInput
                     {...form.getInputProps("confirm_password")}
@@ -127,21 +128,25 @@ const form = useForm({
                   />
                 </div>
   
-  
-                <div className="pt-5" >
-                  <Checkbox
-                  checked={form.values.terms}
-                  onChange={(event) => form.setFieldValue("terms", event.target.checked)} />
-                </div>
-  
                 <button
                   className="mt-10 rounded-md bg-[#292329] p-2 text-white hover:bg-[#7B66C9] hover:text-[#151515]"
                   type="submit">
-                  completeregister
+                  Create Account
                 </button>
               </form>
             </div>
           </div>
+          </MobileLayout>
       </>
       )
 }
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+    const isMobile = context.req.headers["user-agent"]?.includes("Mobile");
+  
+    return {
+      props: {
+        isMobile,
+      },
+    };
+  };
