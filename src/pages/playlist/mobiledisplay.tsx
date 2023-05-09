@@ -12,7 +12,7 @@ export default function MobileDisplay() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gradient-to-br from-[#000000] to-[#252525] min-h-[92vh] h-auto">
+      <main className="bg-gradient-to-br from-[#000000] to-[#252525] min-h-[92vh] h-auto pb-16">
         <div className="grid grid-cols-2 pt-10">
           {playlists.map((i) => (
             <div key={i.id} className="flex flex-col items-center p-5 pb-4 text-white">

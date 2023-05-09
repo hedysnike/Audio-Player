@@ -13,7 +13,7 @@ const { user } = useUser();
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gradient-to-b from-[#000000] to-[#2c2c2c] min-h-[84vh] h-auto">
+      <main className="bg-gradient-to-b from-[#000000] to-[#2c2c2c] min-h-[83vh] h-auto">
         <div className="gap-2 flex items-center justify-center text-2xl text-white h-96">
           <div>Welcome</div>
         <div className="text-[#5416d0]">{user?.username}
