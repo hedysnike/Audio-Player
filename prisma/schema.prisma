@@ -2,30 +2,37 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+    provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+    provider = "mongodb"
+    url      = env("DATABASE_URL")
 }
 
 model Playlist {
-  id        Int      @id @default(autoincrement())
+  id          String    @id @default(uuid()) @map("_id")
   name      String
   image     String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  songs     Song[]
 }
 
 model Song {
-  id         Int      @id @default(autoincrement())
+  id          String    @id @default(uuid()) @map("_id")
   name       String
   image      String?
   artist     String?
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
-  playlist   Playlist @relation(fields: [playlistId], references: [id])
   playlistId Int
+}
+
+model User {
+    id          String    @id @default(uuid()) @map("_id")
+    createdAt   DateTime  @default(now())
+    updatedAt   DateTime  @updatedAt
+    username    String    @unique
+    password    String
+    token       String    @unique
 }

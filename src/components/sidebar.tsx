@@ -2,10 +2,15 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Link from "next/link";
+import { useUser } from "@/lib/hooks/useUser";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Sidebar() {
+  const { user } = useUser();
+
+
+  console.log(user)
   return (
     <>
       <div className="fixed w-1/6 bg-[#19181A] min-h-screen h-full text-white">
@@ -20,6 +25,7 @@ export default function Sidebar() {
             <div className="my-3">Songs</div>
             </Link>
             <div className="my-3">Lyrics</div>
+            {user?.username}
         </div>
       </div>
     </>

@@ -11,7 +11,6 @@ export default function PlaylistDisplay() {
               <Link href="/playlist/[pid]" as={`/playlist/${i.id}`}>
                 <div className="justify-center flex">
                   <img src={i.Image} className="rounded-xl w-52 h-52" />
-                  hello
                 </div>
                 <div className="text-center mt-2">{i.name}</div>
               </Link>
