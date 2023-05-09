@@ -63,7 +63,7 @@ const form = useForm({
   `}
           </style>
         </Head>
-          <div className="flex h-auto min-h-[100vh] justify-center bg-black py-[50px] pb-10">
+          <div className="flex h-auto min-h-[95vh] justify-center bg-black py-[50px] pb-10">
             <div className="h-fit max-w-4xl flex-col items-center justify-center rounded bg-white px-5 pb-24 md:w-[70%] md:px-24">
               <div className="mt-10 mb-10 text-center">
                 <h1 className="text-2xl text-[#742361]">register</h1>

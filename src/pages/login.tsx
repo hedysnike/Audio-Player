@@ -78,7 +78,7 @@ export default function Login() {
 `}
         </style>
       </Head>
-      <div className="flex h-auto min-h-screen w-full justify-center bg-black pt-[50px] pb-10">
+      <div className="flex h-auto min-h-[90vh] w-full justify-center bg-black pt-[50px] pb-10">
         <div className="flex-col items-center justify-center rounded">
           <div className="mt-10 mb-10 text-center">
             <h1 className="text-2xl text-white">Account Authorization</h1>
