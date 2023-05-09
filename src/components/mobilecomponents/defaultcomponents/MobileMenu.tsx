@@ -14,8 +14,8 @@ export function MobileMenu() {
           <Icon icon="mdi:playlist-music" color="white" width="25" height="25" />
           Playlists
         </Link>
-        <Link href="/msongs" className="flex flex-col items-center">
-          <Icon icon="ic:baseline-music-note" color="white" width="25" height="25" /> All Music
+        <Link href="/dashboard" className="flex flex-col items-center">
+          <Icon icon="ic:baseline-music-note" color="white" width="25" height="25" /> Dashboard
         </Link>
       </div>
     </div>

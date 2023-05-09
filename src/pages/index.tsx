@@ -5,7 +5,6 @@ import MobileHome from "../components/mobileindex";
 import { MobileLayout } from "../components/mobilecomponents/defaultcomponents/MobileLayout";
 
 export default function Home({ isMobile }: { isMobile: boolean }) {
-  console.log(isMobile);
 
   return (
     <>
@@ -24,7 +23,6 @@ export default function Home({ isMobile }: { isMobile: boolean }) {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const isMobile = context.req.headers["user-agent"]?.includes("Mobile");
-  console.log(isMobile);
 
   return {
     props: {
