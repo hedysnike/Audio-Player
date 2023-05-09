@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { MobileLayout } from "./mobilecomponents/defaultcomponents/MobileLayout";
-import user from "@/lib/hooks/user";
 import { useUser } from "@/lib/hooks/useUser";
 
 export default function MobileHome() {
