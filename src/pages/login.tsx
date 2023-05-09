@@ -78,7 +78,7 @@ export default function Login() {
       <div className="flex h-auto min-h-screen w-full justify-center bg-black pt-[50px] pb-10">
         <div className="flex-col items-center justify-center rounded">
           <div className="mt-10 mb-10 text-center">
-            <h1 className="text-2xl text-white">authorization</h1>
+            <h1 className="text-2xl text-white">Account Authorization</h1>
           </div>
           <form
             onSubmit={form.onSubmit((values) => {
@@ -109,7 +109,7 @@ export default function Login() {
           >
             <div className="flex flex-row pt-[9px] pb-[6px]">
               <input
-                placeholder="usernamePlaceholde"
+                placeholder="Username"
                 type="text"
                 error
                 required
@@ -120,7 +120,7 @@ export default function Login() {
 
             <div className="flex flex-col pt-[9px] pb-[6px]">
               <PasswordInput
-                placeholder="passwor"
+                placeholder="Password"
                 {...form.getInputProps("password")}
                 className="w-[260px] outline-none md:w-[300px]"
               />
@@ -128,32 +128,22 @@ export default function Login() {
                 <div className="mb-4 text-sm text-red-500">
                 </div>
               )}
-<div className="flex justify-between">
-              <Link
-                href="/resetpassword"
-                className="spacing flex items-center gap-1 pt-2 text-xs tracking-tight text-[#9c9c9c] underline		"
-                >
-                <Icon
-                  icon="material-symbols:lock-reset-sharp"
-                  color="#9c9c9c"
-                  />
-                forgotpass
-              </Link>
+<div className="flex justify-end">
               <Link href="/register" 
-                className="spacing flex items-center md:hidden gap-[2px] pt-2 text-xs tracking-tight text-[#9c9c9c] underline		"
-                >
+                className="spacing flex items-center md:hidden gap-[2px] pt-2 text-xs text-[#9c9c9c] underline ">
                   <Icon icon="mdi:person-circle" />
-                  register
+                  <div className="tracking-wider">
+                   Registration
+                  </div>
                 </Link>
                   </div>
             </div>
 
             <div className="flex justify-between">
               <button
-                className="my-10 flex items-center gap-2 rounded-md bg-[#292929] p-2 px-4 text-sm text-white hover:bg-[#7B66C9] hover:text-[#151515]"
-                type="submit"
-              >
-                login
+                className="my-2 flex items-center gap-2 rounded-md bg-[#292929] p-2 px-4 text-sm text-white hover:bg-[#7B66C9] hover:text-[#151515]"
+                type="submit">
+                Log In
                 <Icon icon="material-symbols:login" />
               </button>
 

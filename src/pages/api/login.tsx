@@ -1,5 +1,5 @@
-import prisma from "@/lib/db";
 import { NextApiRequest, NextApiResponse } from "next";
+import prisma from "@/lib/db";
 
 export default async function login(req: NextApiRequest, res: NextApiResponse) {
   const { username, password } = req.body;
