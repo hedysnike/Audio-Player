@@ -131,7 +131,7 @@ const form = useForm({
                 <button
                   className="mt-10 rounded-md bg-[#292329] p-2 text-white hover:bg-[#7B66C9] hover:text-[#151515]"
                   type="submit">
-                  Create Account
+                  Create Accountt
                 </button>
               </form>
             </div>
