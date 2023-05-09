@@ -149,7 +149,7 @@ export default function Login() {
 
               <Link
                 href="/register"
-                className="my-10 hidden items-center gap-2 rounded-md bg-[#292929] p-2 px-4 text-sm text-white hover:bg-[#7B66C9] hover:text-[#151515] md:flex"
+                className="my-2 hidden items-center gap-2 rounded-md bg-[#292929] p-2 px-4 text-sm text-white hover:bg-[#7B66C9] hover:text-[#151515] md:flex"
               >
                 register
               </Link>
