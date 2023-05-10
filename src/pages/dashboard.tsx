@@ -1,16 +1,32 @@
 import { Layout } from "@/components/Layout";
+import { useAudio } from "@/lib/hooks/useAudio";
+import { useUser } from "@/lib/hooks/useUser";
 import { Avatar } from "@mantine/core";
 
 export default function Dashboard() {
+    const { audio, PlaySong, isPlaying, PauseSong, currentSong } = useAudio();
+    const { user } = useUser();
   return (
     <Layout>
       <div className="bg-black min-h-[84vh] h-auto">
         <div className="text-white flex flex-col items-center justify-center">
-            <div className="py-12">
-                <Avatar size={"xl"}/>
+            <div className="pt-12 pb-10 text-center">
+                <Avatar className="w-32 h-32"/>
+                <h1 className="text-lg py-1">
+                     {user?.username}
+                    </h1>
+            </div>
+    
+            <div>
+                <div>
+                    <img src={currentSong?.Image} alt="" className="max-w-36 max-h-36" />
+                </div>
+                <div className="text-sm text-center py-4">
+                    {currentSong?.name}
+                    {currentSong?.artist}
+                </div>
             </div>
       
-      <div>dashboard</div>
         
         </div>
       </div>

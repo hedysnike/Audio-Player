@@ -45,13 +45,13 @@ export function MobilePlayer() {
               <div className="text-xs opacity-60 ">{currentSong?.artist}</div>
             </div>
           </div>
-          <div className="items-right justify-right mr-5">
+          <div className="items-right justify-right -translate-x-6">
             {isPlaying ? (
               <Icon
                 icon="material-symbols:pause-circle"
                 color="white"
-                width="37"
-                height="37"
+                width="35"
+                height="35"
                 onClick={PauseSong}
               />
             ) : (
@@ -59,8 +59,8 @@ export function MobilePlayer() {
                 <Icon
                   icon="material-symbols:play-circle"
                   color="white"
-                  width="37"
-                  height="37"
+                  width="35"
+                  height="35"
                   onClick={() => PlaySong(currentSong)}
                 />
               )
