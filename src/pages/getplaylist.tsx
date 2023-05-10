@@ -32,21 +32,16 @@ export default function CreatePlaylist() {
             </div>
             <div className="flex items-center justify-center w-full">
                 
-                <div className="bg-white h-40">
+                <div>
                     {playlist?.map((s: any) => {
                         return (
-                            <div key={s.id}>
-                                <div>
-                                    {s.name}
-
-                                </div>
+                            <div className="text-white" key={s.id}>
+                                <div>{s.name}</div>
                                 {s.Image}
                             </div>
                         )
                     })}
                 </div>
-
-            <button className="px-5 py-1.5 rounded text-white bg-[#2c1564]">Create</button>
             </div>
         </div>
       </Layout>

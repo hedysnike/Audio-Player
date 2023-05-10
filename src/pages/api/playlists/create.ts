@@ -17,7 +17,7 @@ export default async function createPlaylist(
       data: {
         name: name,
         image: image,
-        user: { connect: { id: userId } },
+        userId: userId,
       },
     });
 
