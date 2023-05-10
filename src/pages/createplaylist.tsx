@@ -44,13 +44,16 @@ export default function () {
             </h2> 
             <input className="bg-[#2b2b2b] py-1.5 px-2 rounded outline-none border-white" type="text" {...form.getInputProps("name")} />
             </div>
-            <div className="justify-between">
+            <div className="flex gap-5 py-3 items-center justify-center text-white">
+            <h2>
             Image
-            
-            <input type="text" {...form.getInputProps("image")} />
+            </h2>
+            <input className="bg-[#2b2b2b] py-1.5 px-2 rounded outline-none border-white" {...form.getInputProps("image")} />
             </div>
             </div>
-            <button type="submit" className="text-white bg-[#186e4d]">submit</button>
+            <div className="flex items-center justify-center w-full">
+            <button type="submit" className="px-5 py-1.5 rounded text-white bg-[#2c1564]">Create</button>
+            </div>
           </form>
         </div>
       </Layout>
