@@ -8,7 +8,7 @@ export default async function getPlaylists(
   try {
     const playlists = await prisma.playlist.findMany();
 
-    res.status(200).json(playlists);
+    res.status(200).json({playlists});
   } catch (error: any) {
     res
       .status(400)

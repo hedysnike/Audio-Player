@@ -11,29 +11,29 @@ datasource db {
 }
 
 model Playlist {
-  id        String    @id @default(uuid()) @map("_id")
+  id        String    @id @default(uuid()) @map("_id") @db.ObjectId
   name      String
   image     String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  userId    String
+  userId    String   @db.ObjectId
   user      user     @relation(fields: [userId], references: [id])
   songs     Song[]
 }
 
 model Song {
-  id          String    @id @default(uuid()) @map("_id")
+  id          String    @id @default(uuid()) @map("_id") @db.ObjectId
   name       String
   image      String?
   artist     String?
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
-  playlistId String
+  playlistId String   @db.ObjectId
   playlist   Playlist  @relation(fields: [playlistId], references: [id])
 }
 
 model user {
-    id          String    @id @default(uuid()) @map("_id")
+    id          String    @id @default(uuid()) @map("_id") @db.ObjectId
     createdAt   DateTime  @default(now())
     updatedAt   DateTime  @updatedAt
     username    String    @unique

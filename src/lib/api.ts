@@ -37,3 +37,12 @@ export function login(username: string, password: string) {
     body: JSON.stringify({ name, image, userId }),
   });
 }
+
+export function getPlaylist() {
+  return fetch("/api/playlists/get", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+}

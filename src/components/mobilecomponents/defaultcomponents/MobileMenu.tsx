@@ -17,7 +17,7 @@ export function MobileMenu() {
           My Playlists
         </Link>
         <Link href="/users">
-          {user?.username}
+          Users
         </Link>
         {isLoggedIn ? (
                   <Link href="/dashboard" className="flex flex-col items-center">
