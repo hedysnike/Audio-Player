@@ -1,4 +1,4 @@
-import { Playlist } from "@/lib/types";
+import { Playlist } from "./lib/hooks/useUser";
 
 export const playlists: Playlist[] = [
   {
