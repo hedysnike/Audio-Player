@@ -1,3 +1,4 @@
+import { Layout } from "@/components/Layout";
 import { MobileLayout } from "@/components/mobilecomponents/defaultcomponents/MobileLayout";
 import { login } from "@/lib/api";
 import { useUser } from "@/lib/hooks/useUser";
@@ -29,7 +30,7 @@ export default function Login() {
 
   return (
     <>
-    <MobileLayout>
+    <Layout>
       <Head>
         <style type="text/css">
           {`
@@ -101,7 +102,7 @@ export default function Login() {
                     if (res.user) {
                         retry();
                         setTimeout(() => {
-                            router.push("/profile"); 
+                            router.push("/dashboard"); 
                         }, 150);
                     }
                 })
@@ -160,7 +161,7 @@ export default function Login() {
           </form>
         </div>
       </div>
-                  </MobileLayout>
+    </Layout>
     </>
   );
 }

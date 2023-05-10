@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import { MobileLayout } from "../../components/mobilecomponents/defaultcomponents/MobileLayout";
 import { playlists } from "../../lists";
+import { Layout } from "@/components/Layout";
 
 export default function MobileDisplay() {
   return (
@@ -28,4 +28,4 @@ export default function MobileDisplay() {
   );
 }
 
-MobileDisplay.Layout = MobileLayout;
+MobileDisplay.Layout = Layout;

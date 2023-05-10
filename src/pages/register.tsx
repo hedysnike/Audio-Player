@@ -6,7 +6,8 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import * as api from "lib/api"
 import { GetServerSideProps } from "next";
-import { MobileLayout } from "@/components/mobilecomponents/defaultcomponents/MobileLayout";
+import { Layout } from "@/components/Layout";
+
 export default function Register() {
 const router = useRouter();
 const { retry } = useUser();
@@ -46,7 +47,7 @@ const form = useForm({
 
     return(
         <>
-        <MobileLayout>  
+        <Layout>  
         <Head>
           <style type="text/css">
             {` 
@@ -79,7 +80,7 @@ const form = useForm({
                     .then((data: { user: any }) => {
                       if (data.user) {
                         retry();
-                        router.push("/profile");
+                        router.push("/dashboard");
                       }
                     });
                 })}
@@ -131,12 +132,12 @@ const form = useForm({
                 <button
                   className="mt-10 rounded-md bg-[#292329] p-2 text-white hover:bg-[#7B66C9] hover:text-[#151515]"
                   type="submit">
-                  Create Accountt
+                  Create Account
                 </button>
               </form>
             </div>
           </div>
-          </MobileLayout>
+          </Layout>
       </>
       )
 }

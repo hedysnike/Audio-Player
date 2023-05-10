@@ -1,7 +1,7 @@
-import Router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import { playlists } from "../../lists";
-import { MobileLayout } from "../../components/mobilecomponents/defaultcomponents/MobileLayout";
 import { SongsMobileDisplay } from "../../components/mobilecomponents/defaultcomponents/SongsMobileDisplay";
+import { Layout } from "@/components/Layout";
 
 export default function MobilePlaylist() {
   const router = useRouter();
@@ -33,4 +33,4 @@ export default function MobilePlaylist() {
   );
 }
 
-MobilePlaylist.Layout = MobileLayout;
+MobilePlaylist.Layout = Layout;
