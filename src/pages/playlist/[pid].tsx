@@ -2,6 +2,7 @@ import Router, { useRouter } from "next/router";
 import { playlists } from "../../lists";
 import { Layout } from "../../components/Layout";
 import { SongListDisplay } from "../../components/songlistdisplay";
+import { Song } from "@/lib/hooks/useUser";
 
 export default function Playlist() {
   const router = useRouter();
@@ -48,11 +49,11 @@ export default function Playlist() {
             <div className="text-white pt-10 px-20">Start Playing</div>
             <div className="p-20 pt-10 justify-center w-full text-white">
               <div>{handlePart()}</div>
-              {selectPlaylist.songlist.map((s) => (
+              {selectPlaylist.songlist.map((s: Song) => (
                 <SongListDisplay key={s.id} song={s} />
               ))}
                <div>{handlePaart()}</div>
-              {selectPlaylist.songlist2?.map((s) => (
+              {selectPlaylist.songlist2?.map((s: Song) => (
                 <SongListDisplay key={s.id} song={s} />
               ))}
             </div>
