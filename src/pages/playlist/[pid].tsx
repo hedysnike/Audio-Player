@@ -1,7 +1,6 @@
 import Router, { useRouter } from "next/router";
 import { playlists } from "../../lists";
 import { Layout } from "../../components/Layout";
-import { useState } from "react";
 import { SongListDisplay } from "../../components/songlistdisplay";
 
 export default function Playlist() {

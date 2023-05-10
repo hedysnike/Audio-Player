@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
-import { Song } from "@/lib/types";
 import { useAudio } from "@/lib/hooks/useAudio";
+import { Song } from "@/lib/hooks/useUser";
 
 interface SongListDisplayProps {
   song: Song;
