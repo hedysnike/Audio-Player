@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { Song } from "@/lib/types";
+import { Song } from "./useUser";
 
 const AudioContext = createContext<{
   audio: HTMLAudioElement | null;
