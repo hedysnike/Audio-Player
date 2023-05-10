@@ -5,7 +5,7 @@ const f = createFilething<"pages">(); // <-- set this flag
 const auth = (req: Request) => ({ id: "fakeId" });
  
 export const ourFileRouter = {
-  songUploader: f
+  imageUploader: f
     .fileTypes(["image"])
     .maxSize("8MB")
     .onUploadComplete(async ({ metadata }) => {

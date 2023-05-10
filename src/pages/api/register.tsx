@@ -1,6 +1,6 @@
 import { type NextApiRequest, type NextApiResponse } from "next";
 import crypto from "crypto";
-import prisma from "@/lib/db";
+import { prisma } from "@/lib/db";
 
 
 function generateRandomString() {
