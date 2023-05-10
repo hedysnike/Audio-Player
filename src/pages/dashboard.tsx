@@ -2,6 +2,7 @@ import { Layout } from "@/components/Layout";
 import { useAudio } from "@/lib/hooks/useAudio";
 import { useUser } from "@/lib/hooks/useUser";
 import { Avatar } from "@mantine/core";
+import Link from "next/link";
 
 export default function Dashboard() {
     const { audio, PlaySong, isPlaying, PauseSong, currentSong } = useAudio();
@@ -26,6 +27,10 @@ export default function Dashboard() {
                     {currentSong?.artist}
                 </div>
             </div>
+
+            <Link href="/createplaylist" >
+              Create Playlist
+            </Link>
       
         
         </div>

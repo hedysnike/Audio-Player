@@ -28,3 +28,12 @@ export function login(username: string, password: string) {
     });
   }
   
+  export function createPlaylist( name: string, image: string, userId: string ) {
+  return fetch("/api/playlists/create", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ name, image, userId }),
+  });
+}

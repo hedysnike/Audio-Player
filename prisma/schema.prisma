@@ -11,11 +11,13 @@ datasource db {
 }
 
 model Playlist {
-  id          String    @id @default(uuid()) @map("_id")
+  id        String    @id @default(uuid()) @map("_id")
   name      String
   image     String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  userId    String?
+  user      user?     @relation(fields: [userId], references: [id])
 }
 
 model Song {
@@ -35,4 +37,5 @@ model user {
     username    String    @unique
     password    String
     token       String    @unique
+    playlist    Playlist[]
 }

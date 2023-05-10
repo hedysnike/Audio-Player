@@ -5,21 +5,25 @@ export default async function createPlaylist(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const { playlistName, imageUrl } = req.body;
+  const { name, image, userId } = req.body;
 
-  if (!playlistName) {
+  if (!name) {
     res.status(400).json({ message: "Playlist name is required" });
     return;
   }
 
   try {
     await prisma.playlist.create({
-      data: { name: playlistName, image: imageUrl },
+      data: {
+        name: name,
+        image: image,
+        user: { connect: { id: userId } },
+      },
     });
 
     res.status(200).json({
       message: "Playlist created successfully!",
-      playlistName,
+      name,
     });
   } catch (error: any) {
     res
