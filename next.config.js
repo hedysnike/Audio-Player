@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ["i.imgur.com"],
   },
+  experimental: {
+    esmExternals: false,
+  },
 };
 
 module.exports = nextConfig;

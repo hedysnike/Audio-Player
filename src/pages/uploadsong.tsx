@@ -3,12 +3,12 @@ import { createPlaylist } from "@/lib/api";
 import { useUser } from "@/lib/hooks/useUser";
 import { useForm } from "@mantine/form";
 import { useRouter } from "next/router";
-import type { OurFileRouter } from "@/lib/db/uploadthing";
 import { generateReactHelpers } from "@uploadthing/react";
+import { OurSongRouter } from "@/lib/db/uploadsong";
 
-const { useUploadThing } = generateReactHelpers<OurFileRouter>();
+const { useUploadThing } = generateReactHelpers<OurSongRouter>();
 
-export default function CreatePlaylist() {
+export default function uploadSong() {
   const { user, retry } = useUser();
   const router = useRouter();
 
