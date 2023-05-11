@@ -11,8 +11,8 @@ export default async function register(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  const { password, username,  } = req.body;
-
+  const { password, username, } = req.body;
+  console.log(req.body)
   const token = generateRandomString();
 
   const user = await prisma.user.create({
