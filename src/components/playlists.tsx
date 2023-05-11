@@ -10,7 +10,7 @@ export default function PlaylistDisplay() {
             <div key={i.id} className="p-5 pb-4 bg-[#181818] hover:bg-[#232323]">
               <Link href="/playlist/[pid]" as={`/playlist/${i.id}`}>
                 <div className="justify-center flex">
-                  <img src={i.Image} className="rounded-xl w-52 h-52 xl:w-72 xl:h-72 2xl:w-96 2xl:h-96" />
+                  <img src={i.Image} className="rounded-xl w-52 h-52 xl:w-72 xl:h-72 2xl:w-80 2xl:h-w-80" />
                 </div>
                 <div className="text-center mt-2">{i.name}</div>
               </Link>

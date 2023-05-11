@@ -12,12 +12,28 @@ export default async function createPlaylist(
     return;
   }
 
+  const user = await prisma.user.findUnique({
+    where: {
+      id: userId,
+    },
+  });
+
+  if (!user) {
+    res.status(404).json({ message: "User not found" });
+    return;
+  }
+
+
   try {
     await prisma.playlist.create({
       data: {
         name: name,
         image: image,
-        userId: userId,
+        user: {
+          connect: {
+            id: user.id,
+          },
+        },
       },
     });
 
