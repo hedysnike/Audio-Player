@@ -1,6 +1,9 @@
 Full-Stack Audio Player App built with S3 / Prisma / Next.js
 
-With builTin Youtube Download which uploads Youtube Link to S3 at highest Quality
+With builtIn Youtube Converter
+
+
+which uploads Youtube Link file in Highest Quality Audio Format to S3 bucket
 
 
 Link To the site https://audiov2.vercel.app/
