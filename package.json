@@ -1,0 +1,48 @@
+{
+  "name": "music",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "cdk": "cdk",
+    "build": "next build",
+    "dev": "next dev",
+    "postinstall": "prisma generate",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@iconify/react": "^4.0.1",
+    "@mantine/core": "^6.0.10",
+    "@mantine/form": "^6.0.10",
+    "@mantine/hooks": "^6.0.10",
+    "@next/font": "13.1.1",
+    "@prisma/client": "^4.14.0",
+    "@radix-ui/react-slider": "^1.1.0",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.10",
+    "aws-cdk-lib": "^2.79.1",
+    "classnames": "^2.3.2",
+    "constructs": "^10.2.23",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "formidable": "^2.1.1",
+    "next": "13.4.1",
+    "react": "18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.4",
+    "ytdl-core": "^4.11.4"
+  },
+  "devDependencies": {
+    "@types/formidable": "^2.0.5",
+    "@types/react-beautiful-dnd": "^13.1.4",
+    "autoprefixer": "^10.4.13",
+    "aws-cdk": "^2.79.1",
+    "aws-sdk": "^2.1377.0",
+    "postcss": "^8.4.21",
+    "prisma": "^4.14.0",
+    "tailwindcss": "^3.2.4"
+  }
+}
